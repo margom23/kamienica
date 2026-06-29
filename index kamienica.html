@@ -1,0 +1,3255 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>PRZEWODNIK Kamienica-Śnieżnik</title>
+
+  <link rel="icon" type="image/png" href="https://media.istockphoto.com/id/1366063664/pl/wektor/turystyka-g%C3%B3rska-wektorowa-linia-projektowania-pojedyncza-izolowana-ikona.jpg?s=612x612&w=0&k=20&c=D9IrQfC36wwJems60Xut7RPqcIK_PSiGQIeu_NK4jus=">
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://polska-org.pl/foto/211/Schronisko_Na_Sniezniku_im_Zbigniewa_Fastnachta_ul_Sniezna_Miedzygorze_211223.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+/* przyciemnienie tła */
+.overlay {
+    background: rgba(0,0,0,0.7);
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+/* nagłówek */
+h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 36px;
+}
+
+/* banner */
+.banner {
+    width: 100%;
+    height: 40vh;
+    min-height: 400px;
+    max-height: 650px;
+    background: url('https://czarnagora.pl/wp-content/uploads/2023/05/snieznik-wieza-2022-00.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/* układ przycisków */
+.accordion-container {
+    margin-top: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row.bottom {
+    justify-content: center;
+    gap: 20px;
+}
+
+/* zakładki */
+.accordion {
+    background-color: #2c3e50;
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 220px;
+    transition: 0.3s;
+}
+.content a {
+  color: #ffd966; /* jasny żółty - dobrze widoczny na ciemnym tle */
+  text-decoration: underline; /* opcjonalnie podkreślenie */
+}
+
+
+
+
+
+
+.content a:hover {
+  color: #fff; /* zmiana koloru po najechaniu */
+}
+/* hover */
+.accordion:hover {
+    background-color: #3d5a73;
+}
+
+/* aktywna zakładka */
+.accordion.active {
+    background-color: #1abc9c;
+}
+
+
+.content {
+    display: none;
+    padding: 20px;
+    margin: 20px auto;
+    width: 70%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    text-align: left; /* 🔥 to naprawia problem */
+}
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <h1>PRZEWODNIK</h1>
+<h2>Kamienica-Śnieżnik</h2>
+
+
+<div class="author-box">
+    &copy; <a href="mailto:marcel.goman@gmail.com" style="color: inherit; text-decoration: none;">
+  Marcel Goman
+</a>
+</div><br><br>
+    <div class="banner"></div>
+
+    <div class="accordion-container">
+
+        <div class="row">
+            <button class="accordion" onclick="openContent('info', this)">Informacje ogólne</button>
+        </div>
+
+        <div class="row bottom">
+            <button class="accordion" onclick="openContent('short', this)">Kamienica</button>
+ <button class="accordion" onclick="openContent('snieznik', this)">Spacer na Śnieżnik</button>
+            <button class="accordion" onclick="openContent('long', this)">Ścieżka w obłokach</button>
+        </div>
+
+    </div>
+
+    <!-- TREŚCI -->
+
+    <div id="info" class="content">
+        <h2>
+
+
+                <p><h2><p style="text-align: justify;">Rozpoczynamy wędrówkę po urokliwych zakątkach Masywu Śnieżnika (Glatzer Schneeberg, Spieglitzer Schneeberg, Králický Sněžník, Kladský Sněžník, do 1965 r. - Śnieżnik Kłodzki), Kamienicy (wcz. Kamnitz) i okolic. <br><br></h2>
+
+
+
+
+
+
+
+
+
+<!-- Separator Zigzag -->
+<div class="zigzag-separator"></div>
+
+<style>
+.zigzag-separator {
+  width: 100%;
+  height: 20px; /* wysokość zigzaga */
+  background: repeating-linear-gradient(
+    45deg,
+    #004aad,      /* kolor linii */
+    #004aad 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  margin: 30px 0; /* odstęp od sekcji */
+}
+</style>
+
+
+
+
+
+
+<!-- Galeria jednozdjęciowa -->
+<div class="gallery" id="gallery-single">
+  <img src="https://raw.githubusercontent.com/margom23/przewodnik/refs/heads/main/zdjecia/Grafschaft_Glatz-1939_3-strony.jpg"
+       onclick="openSingleLightbox(this)"
+       class="thumb-img" alt="Ilustracja">
+</div>
+
+<!-- Lightbox jednozdjęciowy -->
+<div id="single-lightbox-container" class="lightbox-full" onclick="closeSingleLightbox()">
+  <img id="single-lightbox-img" src="">
+</div>
+
+<style>
+/* Miniaturka */
+#gallery-single { display:flex; justify-content:center; margin:20px 0; }
+#gallery-single .thumb-img { width:25%; max-width:200px; cursor:pointer; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2); transition: transform 0.3s; }
+#gallery-single .thumb-img:hover { transform: scale(1.05); }
+
+/* Lightbox jednozdjęciowy */
+#single-lightbox-container {
+  display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.9); z-index:9999; text-align:center;
+}
+#single-lightbox-container img { max-width:90%; max-height:90%; margin-top:5%; border-radius:6px; }
+
+@media(max-width:600px){
+  #gallery-single .thumb-img{ width:45%; max-width:150px; }
+}
+</style>
+
+<script>
+// Funkcje lightbox dla pojedynczego zdjęcia
+function openSingleLightbox(img){
+  document.getElementById('single-lightbox-img').src = img.src;
+  document.getElementById('single-lightbox-container').style.display = 'block';
+}
+function closeSingleLightbox(){
+  document.getElementById('single-lightbox-container').style.display = 'none';
+}
+</script>
+
+
+Poniżej znajduje się zbiór przedwojennych oraz polskich map terenów, które będziemy odwiedzać. Wycinki z tych map będziemy oglądać przy okazji odwiedzin w konkretnych miejscach.
+<em>(Pliki z mapami są dość duże, mapy mogą się otwierać dłuższą chwilę. Na wielu widznieje oznaczenie "Wilhelmstahl" - to dzisiajszy Bolsesławów - wówczas dość duża wieś, siedziba parafii.)</em>
+</p>
+<br> 
+<ul>
+  <li>Mapa okolic Kamienicy z 1883 r. – <a href="http://maps.mapywig.org/m/German_maps/series/025K_TK25/5767_(3342)_Wilhelmsthal_1883_IfL.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa okolic Kamienicy z 1912 r. – <a href="http://maps.mapywig.org/m/German_maps/series/025K_TK25/5767_Wilhelmsthal_1912_BCUWr7231-32096-45376.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa okolic Kamienicy z 1936 r. – <a href="http://maps.mapywig.org/m/German_maps/series/025K_TK25/5767_Wilhelmsthal_1936_McM91028.jpg" target="_blank">Zobacz mapę</a></li>
+  <li> Mapa okolic Kamienicy z 1938 r. – <a href="http://maps.mapywig.org/m/German_maps/series/025K_TK25/5767_5768_Wilhelmsthal_1938_nnv32p5_BN_Sygn.ZZK_S-29_379_A.jpg" target="_blank">Zobacz mapę</a></li>
+
+<li>Mapa ogólna ziemi kłodzkiej z 1948 r. – <a href="http://maps.mapywig.org/m/Polish_maps/various/Topographic_and_tourist_maps/KOTLINA_KLODZKA_I_GORY_PRZYLEGLE_100K_1948.jpg" target="_blank">Zobacz mapę</a></li>
+
+  <li>Mapa hrabstwa z lat 20. XX w. – <a href="http://maps.mapywig.org/m/German_maps/various/Topographic_and_tourist_maps/KARTE_der_GRATSCHAFT_GLATZ_125K.jpg" target="_blank">Zobacz mapę</a></li>
+
+  <li>Mapa Briegera z lat 30. XX w. – <a href="http://maps.mapywig.org/m/German_maps/various/Topographic_and_tourist_maps/Briegers_Wegekarte_der_Graftschaft_Glatz_75K.jpg" target="_blank">Zobacz mapę</a></li>
+
+  <li>Mapa całego regionu z 1932 r. – <a href="http://maps.mapywig.org/m/German_maps/series/100K_KDR_Kreiskarten/Graftschaft_Glatz_100K_RfL_1932.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa całego regionu z 1938 r. – <a href="http://maps.mapywig.org/m/German_maps/series/075K_Sudetenland/Sudentelnades_75K_3857_Glatz_1938.jpg" target="_blank">Zobacz mapę</a></li>
+</ul>
+<br>
+<h4>Mapy sztabowe WP:</h4>
+<ul>
+  <li>Mapa okolic Śnieżnika z 1958 r. – <a href="http://maps.mapywig.org/m/Polish_maps/series_PRL/025_SGWP/M-33-70-B-c_(MIEDZYGORZE)_1958.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa Kamienicy z 1958 r. – <a href="http://maps.mapywig.org/m/Polish_maps/series_PRL/025_SGWP/M-33-70-B-d_(NOVA_MORAVA)_1958.jpg" target="_blank">Zobacz mapę</a></li>
+</ul>
+<br>
+<p>
+Polecam też świetne narzędzie, jakim jest <a href="https://geoportal.gov.cz/web/guest/map" target="_blank">czeska ortofotomapa tego rejonu z roku 1953 </a>(poniżej wycinek z tejże przedstawiający fragment Lasówki z hutą i kościołem w centrum kadru). Po otwarciu linku należy kliknąć w menu po prawej 'ortofotomapa (50. leta)', jednocześnie odznaczyć 'topograficke mapy'. 
+</p>
+
+
+
+
+
+<!-- Galeria jednozdjęciowa -->
+<div class="gallery" id="gallery-single">
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/fffdsa-1024x461.png"
+       onclick="openSingleLightbox(this)"
+       class="thumb-img" alt="Ilustracja">
+</div>
+
+<!-- Lightbox jednozdjęciowy -->
+<div id="single-lightbox-container" class="lightbox-full" onclick="closeSingleLightbox()">
+  <img id="single-lightbox-img" src="">
+</div>
+
+<style>
+/* Miniaturka */
+#gallery-single { display:flex; justify-content:center; margin:20px 0; }
+#gallery-single .thumb-img { width:25%; max-width:200px; cursor:pointer; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2); transition: transform 0.3s; }
+#gallery-single .thumb-img:hover { transform: scale(1.05); }
+
+/* Lightbox jednozdjęciowy */
+#single-lightbox-container {
+  display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.9); z-index:9999; text-align:center;
+}
+#single-lightbox-container img { max-width:90%; max-height:90%; margin-top:5%; border-radius:6px; }
+
+@media(max-width:600px){
+  #gallery-single .thumb-img{ width:45%; max-width:150px; }
+}
+</style>
+
+<script>
+// Funkcje lightbox dla pojedynczego zdjęcia
+function openSingleLightbox(img){
+  document.getElementById('single-lightbox-img').src = img.src;
+  document.getElementById('single-lightbox-container').style.display = 'block';
+}
+function closeSingleLightbox(){
+  document.getElementById('single-lightbox-container').style.display = 'none';
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="short" class="content">
+        <h2>Plan na dziś to Lasówka, dokładniej – jej północne rewiry. Dziś nie odwiedzimy centrum wsi, a więc kościoła czy miejsca po hucie i szlifierni. 
+Czeka nas natomiast niezbyt strome podejście do podnóży góry Kłobuk, gdzie odpoczniemy na pięknie położonej ławeczce pod lasem. Naszym celem jest natomiast Szary Kamień, spod którego wrócimy w miejsce startu.</h2>
+        <p>
+
+
+
+
+Wchodzimy pod górę tzw. Drogą Zbłąkanych Wędrowców, którą widzisz na poniższych fotografiach. To ta droga odchodząca od kościoła w górę. 
+
+ Przy okazji zwróć uwagę na podpis pod jednym ze zdjęć: ‘Dąbrowa’ – to tymczasowa nazwa Lasówki, istniejąca przez dwa 
+powojenne lata – 1945-1947.
+
+<div class="gallery-modular" id="gallery1">
+  <img src="https://polska-org.pl/foto/4638/Panoramy_i_widoki_Lasowka_4638273.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/393/Panoramy_i_widoki_Lasowka_393282.jpg" class="thumb-img">
+</div>
+
+<div class="lightbox-modular" id="lightbox1">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+
+@media(max-width:600px){
+  .lb-prev, .lb-next{
+    font-size:35px;
+  }
+}
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery1');
+  const lightbox = document.getElementById('lightbox1');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+Czerwona kropka na poniższej grafice (to wycinek mapy z 1935 r.) to start naszej dzisiejszej wędrówki - w sąsiedztwie leśniczówki (której lokalizacja nie zmieniła się od czasów przedwojennych). Niebieska kropka
+ to cel na dziś. Zielona kropka na mapce 
+to kapliczka z XIX w., która była częścią większej kalwarii – do dziś przetrwał tylko jeden element tejże.
+
+
+<div style="display:flex;justify-content:center;margin:20px 0;">
+  <img id="img1"
+  src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/vfsd-1024x649.png"
+  style="width:280px;cursor:pointer;border-radius:8px;transition:0.3s;">
+</div>
+
+<div id="lb" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;justify-content:center;align-items:center;">
+  <span id="close" style="position:absolute;top:20px;right:30px;font-size:40px;color:white;cursor:pointer;">&times;</span>
+  <img id="lbimg" style="max-width:90%;max-height:90%;">
+</div>
+
+<script>
+const img = document.getElementById("img1");
+const lb = document.getElementById("lb");
+const lbimg = document.getElementById("lbimg");
+const close = document.getElementById("close");
+
+img.onclick = function(){
+  lbimg.src = this.src;
+  lb.style.display = "flex";
+}
+
+close.onclick = function(){
+  lb.style.display = "none";
+}
+
+lb.onclick = function(e){
+  if(e.target === lb){
+    lb.style.display = "none";
+  }
+}
+
+document.addEventListener("keydown", e=>{
+  if(e.key === "Escape") lb.style.display = "none";
+});
+</script>
+
+
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+Dotarliśmy do magicznej ławeczki z widokiem na góry Orlickie - z widoczną Wielką Destną, Orlicą i Masarykovą chatą. Od ławeczki skręcamy w prawo i kierując się strzałkami umieszczonymi na drzewach 
+(drewniane deszczułki z wypalonymi strzałkami) wędrujemy przez piękny świerkowo-bukowy las. 
+Kierujemy się na Siwą Skałę/Szary Kamień (przed wojną Graue Stein). 
+Może uda się odnaleźć leśne słupki graniczne z XVIII w. widoczne poniżej na fotografiach.
+<br><br>
+Szary Kamień to duże blokowisko skalne, o ciekawym ukształtowaniu przypominającym niektóre formacje niedalekich Gór Stołowych. 
+Jest naturalnym odsłonięciem skał gnejsowych, wchodzących w skład kompleksu metamorficznego Gór Bystrzyckich i Orlickich.
+
+<div class="gallery-modular" id="gallery2">
+
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/graue-stein-1024x431.png" class="thumb-img">
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/2009_0117_27-1.jpg" class="thumb-img">
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/2009_0117_28_ckgn-1.jpg" class="thumb-img">
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/2009_0118_17_ckgn-1.jpg" class="thumb-img">
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/2009_0118_18-1.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox2">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery2');
+  const lightbox = document.getElementById('lightbox2');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+    </div>
+
+
+
+
+
+    <div id="snieznik" class="content">
+
+br b<br>bb<br>vvb
+<br><br><br>
+</p>
+    </div>
+
+
+    <div id="long" class="content">
+        <h2>Czeka nas dziś dwudziestokilkukilometrowa wycieczka, którą uprzyjemniać nam będą liczne przystanki. 
+Przejdziemy “górą” nad Lasówką, 
+przez torfowisko pod Zieleńcem oraz sam Zieleniec, aż dotrzemy na Orlicę (na mapce poniżej widnieje jako ‘Hohe Mense’), 
+najwyższy szczyt polskiej części gór Orlickich. Wrócimy czeską stroną przez Masarykovą chatę i Trčkov.</h2>
+        <p>
+
+<div class="gallery-modular" id="gallery11">
+
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/Gory_Orlickie_8659028-1024x657.jpg" class="thumb-img">
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/Zieleniec_5409640-560x1024.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox11">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery11');
+  const lightbox = document.getElementById('lightbox11');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+<div style="border:10px solid #c62828; padding:15px 20px; border-radius:6px; margin:15px 0;">
+<p style="margin:0;">
+<strong> Dzisiejsza trasa przedstawia się następująco:</strong><br>
+Lasówka → czerwonym szlakiem na północ → chata SKPS → zielony szlak w okolicy torfowiska → przejście przez torfowisko → 
+doliną Młynówki pod górę do Zieleńca → przejście przez Zieleniec → zielonym szlakiem na Orlicę → wzdłuż granicy do Masarykovej chaty → 
+żółtym szlakiem do Trčkova → przejście przez Dziką Orlicę do Lasówki
+</p>
+</div>
+
+
+<div style="text-align:center; margin:20px 0;">
+  <a href="https://mapa-turystyczna.pl/route/1rjrz" target="_blank">
+    <img src="https://raw.githubusercontent.com/margom23/przewodnik/refs/heads/main/zdjecia/Zrzut-ekranu-2026-01-10-141553-150x150.png"
+         alt="Mapa trasy"
+         style="width:25%; max-width:150px; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.25); cursor:pointer; transition: transform 0.3s;">
+  </a>
+</div>
+
+<style>
+a img:hover {
+  transform: scale(1.05);
+}
+@media(max-width:600px){
+  a img { width:45%; max-width:120px; }
+}
+</style>
+
+
+
+<div style="width:80%;margin:30px auto;border-top:1px solid #ccc;"></div>
+
+Wychodzimy w kierunku torfowiska pod Zieleńcem. 
+Zaczynamy czerwonym szlakiem i nie zejdziemy z niego przez około 2 
+godziny.<br><br>
+
+Po dłuższej chwili mijamy po prawej stronie 
+
+
+<a href="https://skps.wroclaw.pl/chatka-skps/" target="_blank">chatkę koła przewodników sudeckich</a>, znajdującą się na Polanie św. Huberta. 
+<a href="https://maps.app.goo.gl/LuM1H8hRmavTrRpk9" target="_blank">LOKALIZACJA CHATY.</a><br><br>
+
+W miejscu postoju (takie z ławeczką) zostawiamy czerwony szlak i drogą na północ idziemy w kierunku szlaku zielonego 
+(będziemy się go trzymać aż do dzisiejszego celu naszej wycieczki, czyli szczytu Orlicy). <br><br>
+Po około 20 minutach skręcamy w lewo i zielonym szlakiem wędrujemy przez: <br><br>
+<h3><a href="https://polska-org.pl/564689,Rezerwat_przyrody_Torfowisko_pod_Zielencem.html" target="_blank">
+Torfowisko pod Zieleńcem – rezerwat przyrody</a></h3>
+<div class="gallery-modular" id="gallery12">
+
+  <img src="https://polska-org.pl/foto/5404/Rezerwat_przyrody_Torfowisko_pod_Zielencem_5404066.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/3212/Rezerwat_przyrody_Torfowisko_pod_Zielencem_3212020.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/9105/Rezerwat_przyrody_Torfowisko_pod_Zielencem_9105863.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/8978/Rezerwat_przyrody_Torfowisko_pod_Zielencem_8978571.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox12">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery12');
+  const lightbox = document.getElementById('lightbox12');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+Rezerwat został utworzony w 1954 roku zarządzeniem Ministra Leśnictwa i Przemysłu Drzewnego. Jest to rezerwat o powierzchni 156,8 ha, 
+utworzony dla ochrony ciekawych i rzadkich gatunków roślin chronionych oraz naturalnych zbiorowisk roślinnych. 
+Rezerwat utworzono głównie dla zachowania i ochrony naturalnego torfowiska wysokiego z brzozą karłowatą 
+Betula nana. Miąższość torfu przekracza miejscami 8 m. <br><br>Obszar torfowiska leży dokładnie na wododziale pomiędzy zlewiskiem 
+Morza Bałtyckiego i Północnego, obszar jest częściowo bezodpływowy. Z torfowiska wypływają źródliskowe potoki tworzące rzekę Dziką Orlicę.
+Dzika Orlica wpada po czeskiej stronie do Orlicy, która z kolei jest dopływem Łaby, kończącej swój bieg w Morzu Północnym.<br><br>
+Przepływające przez rezerwat strumienie mają wodę zabarwioną na ciemnoczerwony kolor, co można przy odpowiedniej pogodzie dostrzec wszędzie wokół, ponieważ kałuże i strumyki na tym
+obszarze mają właśnie kolor świeżej coca-coli. Związane jest to z wypłukiwaniem z torfowiska 
+kwasów humusowych. Mimo to woda nadaje się do picia. Woda w potokach rezerwatu ma kwaśny odczyn, jej pH wynosi 3,8-4,0.
+<br><br>Torfowisko tworzą dwie misy: "Topielisko" i "Czarne Bagno", co częściowo widać na poniższym wycinku z mapy sztabowej z 1960 r.
+
+<div class="gallery-modular" id="gallery13">
+
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/ssawq.png" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox13">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery13');
+  const lightbox = document.getElementById('lightbox13');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+<br><br>
+
+Na terenie torfowiska w roku 1945 rozbił się niemiecki samolot, a jego szczątki zostały wyeksplorowane w 2010 r.
+
+<div class="gallery-modular" id="gallery14">
+
+  <img src="https://polska-org.pl/foto/6206/2010_Poszukiwania_szczatkow_niemieckiego_samolotu_6206235.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6206/2010_Poszukiwania_szczatkow_niemieckiego_samolotu_6206245.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6206/2010_Poszukiwania_szczatkow_niemieckiego_samolotu_6206236.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6206/2010_Poszukiwania_szczatkow_niemieckiego_samolotu_6206237.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox14">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery14');
+  const lightbox = document.getElementById('lightbox14');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+<br><br>
+Idąc dalej przez torfowisko, po prawej stronie ścieżki, znajduje się miejsce po dawnej wieży widokowej 
+(<a href="https://maps.app.goo.gl/iq75HYgDYQa77Zjd8" target="_blank">przybliżona lokalizacja</a>). Na przestrzeni ostatnich dziesięcioleci istniało 
+w tym miejscu kilka wież widokowych, ostatnia funkcjonowała w latach 2000-2020.
+
+
+<div class="gallery-modular" id="gallery15">
+
+  <img src="https://polska-org.pl/foto/9103/Wieza_widokowa_dawna_9103068.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/9128/Wieza_widokowa_dawna_9128399.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/3211/Wieza_widokowa_dawna_3211768.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/8973/Wieza_widokowa_dawna_8973877.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox15">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery15');
+  const lightbox = document.getElementById('lightbox15');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+<div style="width:80%;margin:30px auto;border-top:1px solid #ccc;"></div>
+
+
+
+
+<h3><a href="https://polska-org.pl/565144,Duszniki_Zdroj,Zieleniec.html" target="_blank">Zieleniec</a></h3>
+
+Po dość stromym zejściu z terenu torfowiska, przechodzimy przez jezdnię i trzymając się wciąż zielonego szlaku, powoli wkraczamy na 
+teren Zieleńca (wcz. Grunwald). <br>
+Będziemy wspinać się doliną rzeczki Młynówki. Dziś wzdłuż niej poprowadzono wyciągi narciarskie.<br><br>
+Na zdjęciach poniżej widzisz widoki doliny “od dołu”, czyli dokładnie tak, jak dziś się wspinamy 
+(naszą trasę wzdłuż rzeczki, wraz z oznaczonym miejscem startu, zaznaczyłem czerwonymi kropkami).
+
+<div class="gallery-modular" id="gallery16">
+
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/bdsdfv-1.png" class="thumb-img">
+  <img src="https://polska-org.pl/foto/11860/Dolina_Mlynowki_Duszniki_Zdroj_11860847.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/4727/Dolina_Mlynowki_Duszniki_Zdroj_4727082.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/8501/Schronisko_Janosikowa_Hala_dawne_Duszniki_Zdroj_8501833.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox16">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery16');
+  const lightbox = document.getElementById('lightbox16');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+<br>
+Idąc pod górę mijamy najpierw po lewej dawną leśniczówkę 
+(dziś agroturystyka – patrz mapka), następnie uszkodzoną kapliczkę ze sceną ukrzyżowania.
+
+<br><br>
+Wspinając się pod linami wyciągów zbliżamy się nowoczesnych zabudowań Zieleńca, które wyłaniają się zza wzniesienia. Czy te betonowe wysokościowce pasują
+do krajobrazu tego górskiego kurortu - pozostawiam Twojej ocenie. <br><br> 
+Dochodząc do kościoła widzimy miejsce po dawnej skoczni narciarskiej o rozmiarze K-45. 
+Skocznia została wybudowana najprawdopodobniej w latach 30. XX w. i funkcjonowała najwyżej kilkanaście lat.
+
+
+<div class="gallery-modular" id="gallery17">
+
+  <img src="https://polska-org.pl/foto/244/Skocznia_narciarska_dawna_Duszniki_Zdroj_244543.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6298/Skocznia_narciarska_dawna_Duszniki_Zdroj_6298928.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/4115/Panoramy_i_widoki_Zielenca_Duszniki_Zdroj_4115378.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/3666/Zimowe_panoramy_i_widoki_Zielenca_Duszniki_Zdroj_3666400.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/9910/Zimowe_panoramy_i_widoki_Zielenca_Duszniki_Zdroj_9910573.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox17">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery17');
+  const lightbox = document.getElementById('lightbox17');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+<br>
+
+<div style="width:80%;margin:30px auto;border-top:1px solid #ccc;"></div><br>
+<h3>Kościół i jego otoczenie</h3>
+Dotarliśmy do zabudowań położonych nieopodal szosy biegnącej przez Zieleniec. 
+
+
+
+W miejscu, w którym stoimy widzimy kamienny kościół św. Anny, położony na około 865 m n.p.m. Wcześniej stał w tym miejscu drewniany kościółek postawiony w 1762 r. Co ciekawe oba obiekty na początku XX w. przez chwilę istniały obok siebie, bo nowy kościół wybudowano w 1902 r., a stary rozebrano ok. 1904 r. Ten krótki okres współistnienia obu świątyń został uwieczniony na fotografii:
+
+<div class="gallery-modular" id="gallery18">
+
+  <img src="https://polska-org.pl/foto/3778/Kosciol_sw_Anny_Duszniki_Zdroj_3778936.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox18">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery18');
+  const lightbox = document.getElementById('lightbox18');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+
+<br><h4>Nieistniejący kościół mariacki (rozebrany przypuszczalnie ok. 1904 r.)</h4>
+Drewniany kościółek wybudowany w 1762 r. pod wezwaniem Matki Bożej. Obiekt rozebrano w związku z budową nowego, murowanego kościoła św. Anny.
+
+<div class="gallery-modular" id="gallery19">
+
+  <img src="https://polska-org.pl/foto/214/Kosciol_Matki_Boskiej_dawny_Duszniki_Zdroj_214470.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6617/Kosciol_Matki_Boskiej_dawny_Duszniki_Zdroj_6617638.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox19">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery19');
+  const lightbox = document.getElementById('lightbox19');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+<br><h4>Kościół św. Anny</h4>
+
+Należy dziś do parafii śś. Franciszka i Leonarda w Dusznikach Zdr., w którym sprawują duszpasterstwo oo. franciszkanie. <br><br>
+
+Kościół wybudowany w 1902 r., powstał dzięki staraniom ks. Augustyna Grunda - proboszcza Zieleńca w latach 1890-1918. Został zbudowany z kamieni polnych - eratycznych, w stylu neoromańskim, w miejscu dawnej drewnianej świątyni z XVIII w. Konsekracji kościoła dokonał arcybiskup Pragi, kard. Lev Skrbensky 4 października 1904 r. W tym miejscu warto przypomnieć, że zwierzchnikiem Kościoła katolickiego na ziemi kłodzkiej nieprzerwanie przez ok. 1000 lat był biskup Pragi. Od X w. aż do 28 czerwca 1972 r. tereny te były częścią archidiecezji w Pradze - stąd obecność czeskiego hierarchy na konsekracji świątyni. <br><br>
+
+Jest to budowla kamienna jednonawowa, z półkolistą absydą i kruchtą, pięknym portalem z piaskowca. Posiada masywną wieżę zwieńczoną ostrosłupowym hełmem, kryty gontem
+Na zewnątrz budowli, po obu stronach głównego wejścia na neoklasycznych kolumnach umieszczone są barokowe figury św. Krzyża (1866) i Matki Bożej (1862) autorstwa Johanna Postlera, pochodzące z dawnej świątyni. Na uwagę zasługuje portal neoromański z piaskowca oraz okucia drzwi, zwłaszcza wewnętrzne. W stylu neoromańskim zostało wykonane również całe wyposażenie wnętrza z wyjątkiem chrzcielnicy, której pokrywa jest barokowa, prawdopodobnie relikt z dawnego kościoła. W głównym ołtarzu mieści się obraz św. Anny i św. Joachima, rodziców NMP oraz figury apostołów Piotra i Pawła. Obok głównego ołtarza jest umieszczona tablica upamiętniająca akt konsekracji.<br><br>
+
+Kościół został odnowiony przez oo. franciszkanów w roku 1966.
+
+<div class="gallery-modular" id="gallery20">
+
+  <img src="https://polska-org.pl/foto/12310/Zimowe_panoramy_i_widoki_Zielenca_Duszniki_Zdroj_12310783.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/9303/Panoramy_i_widoki_Zielenca_Duszniki_Zdroj_9303110.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/3431/Kosciol_sw_Anny_Duszniki_Zdroj_3431482.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/298/Schronisko_PTTK_Orlica_Duszniki_Zdroj_298788.jpg" class="thumb-img">
+  <img src="https://visitduszniki.pl/wp-content/uploads/2023/11/SZY5482-1536x1025.jpg" class="thumb-img">
+  <img src="https://visitduszniki.pl/wp-content/uploads/2023/11/KOR0980-1536x1022.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox20">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery20');
+  const lightbox = document.getElementById('lightbox20');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+<br>
+
+
+
+Proboszczem parafii w Grunwald od 1 października 1927 r. był Gustav Pangratz (ur. 1881) - członek liczącej się w okolicy rodziny Pangratz - właścicieli m.in. huty i szlifierni oraz pięknej willi w niedalekiej Lasówce (Kaiserswalde). Gustav święcenia kapłańskie przyjął 23 czerwca 1906 r. Poniżej zdjęcie ks. Pangratza (stoi w środku) sprzed rodzinnej willi w Lasówce tuż po mszy prymicyjnej w 1906 r. Wtedy jeszcze nie mógł wiedzieć, że 21 lat później zostanie mianowany proboszczem parafii w sąsiednim Zieleńcu.<br>
+
+Teren parafii św. Anny zamieszkiwało w 1932 r. 562 katolików i 26 protestantów.
+<br><br>
+
+
+
+<div class="gallery-modular" id="gallery43">
+
+  <img src="https://polska-org.pl/foto/6138/Villa_Pangratz_dawna_Lasowka_6138816.jpg" class="thumb-img">
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-05-20%20214926.png" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox43">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery43');
+  const lightbox = document.getElementById('lightbox43');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+
+<br>
+
+<h4>Cmentarz przykościelny</h4>
+
+Cmentarz został uporządkowany i ogrodzony w 1974 r. Znajduje się na nim zabytkowa grupa ukrzyżowania, wykonana w piaskowcu w roku 1899. Sam obiekt jest zadbany, przedwojenne nagrobki potraktowano z szacunkiem. Te, które nadawały się do spionizowania - wyeksponowano w północnej części nekropolii.
+
+
+<div class="gallery-modular" id="gallery21">
+
+  <img src="https://polska-org.pl/foto/5183/Cmentarz_przykoscielny_Duszniki_Zdroj_5183560.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/10024/Grob_Anny_Goebel_Duszniki_Zdroj_10024880.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/5192/Cmentarz_przykoscielny_Duszniki_Zdroj_5192741.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/10024/Grupa_figuralna_Ukrzyzowanie_Duszniki_Zdroj_10024949.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox21">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery21');
+  const lightbox = document.getElementById('lightbox21');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+<br><br>
+
+
+
+<div style="width:80%;margin:30px auto;border-top:1px solid #ccc;"></div>
+
+<br>
+<h3>Kolejnymi obiektami, które będziemy tropić, będą przede wszystkim istniejące, nieistniejące i istniejące częściowo schroniska górskie (oraz ich otoczenie), z których Zieleniec słynął przed wojną. W swoich opisach będę cytował prof. Jacka Suchodolskiego, którego artykuł <a href="https://margom23.github.io/przewodnik/zdjecia/7_pl-1.pdf" target="_blank">"Zapomniane schroniska Ziemi Kłodzkiej. O architekturze inspirowanej miejscową tradycją budowlaną"</a> z 2021 r. polecam w całości.</h3>
+
+
+<br>
+
+
+<div style="width:80%;margin:30px auto;border-top:1px solid #ccc;"></div>
+
+<br>
+
+
+<h3>Schronisko Orlica – jedyne oryginalnie zachowane przedwojenne schronisko w Zieleńcu.</h3>
+
+
+Schronisko to należy do najstarszych i najciekawszych budynków w Zieleńcu. 
+Posiada charakterystyczną bryłę z wyżką, nakrytą mansardowym dachem z naczółkami.
+<br><br>
+
+Budynek ma bardzo ciekawą i burzliwą historię. Należy przypuszczać, że 
+istnieje od 1878 roku co potwierdza data zamieszczona na frontowym szczycie przy głównym wejściu. 
+Z dostępnych źródeł wynika, że jego budowniczym i pierwszym właścicielem mógł być Józef Rübartsch - 
+starszy brat Henryka Rübartscha - postaci bardzo ważnej dla Zieleńca, o której dużo szerzej opowiemy później - 
+podczas wizyty przy obelisku mu poświęconym.
+
+Arcyciekawa historia schroniska do poczytania <a href="https://www.orlica.info/historia" target="_blank">TUTAJ</a>.
+
+
+<div class="gallery-modular" id="gallery22">
+
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/orli-1024x654.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/3336/Schronisko_PTTK_Orlica_Duszniki_Zdroj_3336863.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/171/Schronisko_PTTK_Orlica_Duszniki_Zdroj_171500.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/3329/Schronisko_PTTK_Orlica_Duszniki_Zdroj_3329013.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/4809/Schronisko_PTTK_Orlica_Duszniki_Zdroj_4809986.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox22">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery22');
+  const lightbox = document.getElementById('lightbox22');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+
+<br><br>
+Wspomnianą inskrypcję z datą powstania budynku znajdziesz na południowej ścianie schroniska. Musisz spojrzeć wyżej, pod gzyms dachu. Znajdziesz tam wypaloną w drewnie sentencję, zawierającą datę budowy schroniska – "erbaut 1878".
+<div class="gallery-modular" id="gallery23">
+
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/ddddlllll.png" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox23">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery23');
+  const lightbox = document.getElementById('lightbox23');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+
+
+<br>
+
+
+<br>
+
+Przed schroniskiem stoi kamienna rzeźba patrona ziemi kłodzkiej, bardzo tu popularnego, św. Jana Nepomucena. Rzeźba jest starsza niż schronisko, bo pochodzi z 1862 r. Ciekawostką jest sposób przedstawienia postaci świętego. Św. Jan stoi z gołą głową, w prawej ręce trzyma biret. Takie rzadkie przedstawienie zwykle występuje w przypadku usytuowania figury w środku lub w pobliżu kościoła.
+
+<div class="gallery-modular" id="gallery24">
+
+  <img src="https://polska-org.pl/foto/309/Osrodek_Wypoczynkowo_Szkoleniowy_Stoklos_Duszniki_Zdroj_309762.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/171/Schronisko_PTTK_Orlica_Duszniki_Zdroj_171500.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/248/Figura_sw_Jana_Nepomucena_Duszniki_Zdroj_Zieleniec_Duszniki_Zdroj_248349.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/10024/Figura_sw_Jana_Nepomucena_Duszniki_Zdroj_Zieleniec_Duszniki_Zdroj_10024922.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/7212/Figura_sw_Jana_Nepomucena_Duszniki_Zdroj_Zieleniec_Duszniki_Zdroj_7212394.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox24">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery24');
+  const lightbox = document.getElementById('lightbox24');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+<br>
+
+
+
+<div style="width:80%;margin:30px auto;border-top:1px solid #ccc;"></div>
+
+<br><h3>Gasthaus zur Mense</h3><br><br>
+Tuż obok Orlicy, pomiędzy nią a kościołem (patrz zdjęcie lotnicze poniżej), stał niepozorny budynek schroniska <b>Gasthaus zur Mense 
+(noszące później nazwę Ritterbaude)</b>.
+<br><br>
+Położone na 872 m n.p.m. schronisko kojarzy się z postacią H. Rübartscha (o którym - jak już wspominałem - opowiemy szerzej później), 
+który rozpoczynał w nim swą działalność jako oberżysta. Usytuowany naprzeciw wejścia głównego do kościoła, 
+budynek Gasthausu należał do najstarszych w Zieleńcu (oprócz drewnianego kościoła rozebranego z początkiem XX stulecia) i 
+swą formą nawiązywał do regionalnej tradycji budownictwa drewnianego Ziemi Kłodzkiej. Oferował 35 miejsc noclegowych w 15 
+pokojach. Gasthaus zmienił nazwę na Ritterbaude, gdy objął go nowy właściciel - Josef Ritter. <br><br>Ten parterowy obiekt, przykryty mansardowym 
+dachem z naczółkiem oraz z wyżką, był jednym z wielu tego typu budynków, spotykanych na pograniczu kłodzko-orlickim jak i w 
+innych częściach regionu. W dużej mierze przypominał pod względem swej formy i detalu budowlanego stojący obok do dziś budynek 
+schroniska Orlica z 1878 roku, lecz był najprawdopodobniej od niego starszy. Rübartsch ostatecznie opuścił go w 1903 roku, gdy 
+przeniósł się na stałe do swego schroniska Hohe Mense-Baude na szczycie Orlicy. Po wojnie przez pewien czas budynek zajazdu pełnił 
+funkcje pomocnicze jako Orlica III. Gasthaus zur Mense został rozebrany w latach 60. XX wieku.
+
+
+<div class="gallery-modular" id="gallery25">
+
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/jhgkj.png" class="thumb-img">
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/Panoramy_i_widoki_Zielenca_Duszniki_Zdroj_174086.jpg" class="thumb-img">
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/Panoramy_i_widoki_Zielenca_Duszniki_Zdroj_5656501.jpg" class="thumb-img">
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/Panoramy_i_widoki_Zielenca_Duszniki_Zdroj_83352-1024x641.jpg" class="thumb-img">
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/Zieleniec_3431769-1024x729.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/3431/Kosciol_sw_Anny_Duszniki_Zdroj_3431481.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox25">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery25');
+  const lightbox = document.getElementById('lightbox25');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:1px solid #ccc;"></div>
+<br>
+
+<h3>Haus Friemel, dziś ośrodek Hanka.</h3>
+<br><br>
+Pensjonat z początku wieku XX. Dziś przebudowany w sposób mocno utrudniający rozpoznanie w nim pierwotnej bryły. 
+Na zdjęciach widać etapy przerabiania kształtu budynku. Jeszcze w 2008 r. był podobny do wersji sprzed wojny, 
+dziś nie sposób dostrzec w nim starych kształtów. Obiekt nigdy nie miał rangi schroniska. <a href="https://sbc.org.pl/dlibra/publication/333847/edition/315493/einwohnerbuch-1937-1-teil-landkreis-glatz-mit-allen-gemeinden-einschliesslich-der-stadte-bad-reinerz-lewin-neurode-wunschelburg-2-teil-kreis" target="_blank">Adressbuch z 1937 r.</a> na str. 104 przynosi nam informację, że Albina Friemel prowadziła tu sklep i piekarnię.
+<br><br>
+ 
+
+Na pierwszym z poniższych zdjęć widać Haus Friemel wraz z leżącym tuż poniżej nieistniejącym budynkiem schroniska 
+Gasthaus zur Mense, o którym była mowa przed chwilą.
+
+
+
+<div class="gallery-modular" id="gallery26">
+
+  <img src="https://polska-org.pl/foto/3431/Kosciol_sw_Anny_Duszniki_Zdroj_3431480.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6134/Osrodek_Wypoczynkowy_Hanka_Duszniki_Zdroj_6134875.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6134/Osrodek_Wypoczynkowy_Hanka_Duszniki_Zdroj_6134887.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/3917/Osrodek_Wypoczynkowy_Hanka_Duszniki_Zdroj_3917443.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/10257/Osrodek_Wypoczynkowy_Hanka_Duszniki_Zdroj_10257540.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/421/Osrodek_Wypoczynkowy_Hanka_Duszniki_Zdroj_421835.jpg" class="thumb-img">
+<img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-05-20%20212221.png" class="thumb-img">
+
+
+
+
+
+
+</div>
+
+<div class="lightbox-modular" id="lightbox26">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery26');
+  const lightbox = document.getElementById('lightbox26');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:1px solid #ccc;"></div>
+
+<br>
+
+Idziemy dalej zielonym szlakiem wzdłuż jezdni.
+<br><br>
+ 
+<h3>Pensjonat Grunwald</h3>
+W miejscu dzisiejszego pensjonatu Straszny Dwór (po lewej stronie drogi) istniał budynek gospody, która z czasem awansowała do rangi schroniska (baude).
+
+Budynek wybudowany w 1900 roku jako <b>pensjonat Grunwald</b>, oferował 8 pokoi i 16 miejsc noclegowych. 
+Na początku lat dwudziestych otworzono w obiekcie schronisko Grunwaldbaude. 
+W 1934 roku rozbudowano werandę i zmieniono nazwę na Adlerbaude. Ostatnim właścicielem był Josef Piffczyk. <br><br><br>
+<div class="gallery-modular" id="gallery28">
+
+  <img src="https://polska-org.pl/foto/413/Schronisko_Janosikowa_Hala_dawne_Duszniki_Zdroj_413819.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/5575/Schronisko_Janosikowa_Hala_dawne_Duszniki_Zdroj_5575868.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/8665/Schronisko_Janosikowa_Hala_dawne_Duszniki_Zdroj_8665563.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/5575/Schronisko_Janosikowa_Hala_dawne_Duszniki_Zdroj_5575952.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6134/Schronisko_Janosikowa_Hala_dawne_Duszniki_Zdroj_6134865.jpg" class="thumb-img">
+ <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-05-20%20212545.png" class="thumb-img">
+
+
+
+
+</div>
+
+<div class="lightbox-modular" id="lightbox28">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery28');
+  const lightbox = document.getElementById('lightbox28');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+Po 1950 roku w obiekcie otworzono schronisko Janosikowa Hala, które działało do lat 60. Na koniec obiekt przeszedł 
+na własność Studium Wychowania Fizycznego z Wrocławia. W latach 70. został częsciowo rozebrany – 
+fragment budynku z kamienną podmurówką i finezyjnymi, trójkątnymi okienkami 
+jest pozostałością po pierwotnym obiekcie – widać to poniżej:
+<div class="gallery-modular" id="gallery27">
+
+  <img src="https://polska-org.pl/foto/9061/Schronisko_Janosikowa_Hala_dawne_Duszniki_Zdroj_9061736.jpg" class="thumb-img">
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/dghxgfg-1024x602.png" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox27">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery27');
+  const lightbox = document.getElementById('lightbox27');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:1px solid #ccc;"></div>
+<br>
+<h3>Berghof Rübartsch</h3><br>
+Powyżej dzisiejszego Odido (nieco powyżej tej przepięknej wieży telekomunikacyjnej) znajdowało się schronisko Berghof Rübartsch 
+(kojarzymy już to nazwisko), 
+opisywane jako “domek narciarski” (czerwony znacznik na fotografii poniżej).
+
+Usytuowane na znacznym spadku terenu (na wys. 975 m n.p.m.), należało do obiektów o stosunkowo niewielkich gabarytach, 
+lecz z widocznymi wpływami regionalnymi w swej architekturze. Zapewniało 25 miejsc noclegowych. Pierwotną nazwą tej orlickiej boudy, 
+na stoku Šerlicha, było Reinerzer „Ski Hütte”. <br> <br>
+Istniejący już budynek w 1924 r. zakupiony został przez dusznicki klub narciarski (Skiklub Reinerz), 
+który przeprowadził częściową modernizację obiektu. Oficjalne otwarcie obiektu, którego zarządcą był 
+Max Rübartsch, odbyło się 26 maja 1927 r. W 1932 r. Skiklub sprzedał budynek dotychczasowemu dzierżawcy, 
+a ten przemianował schronisko na Berghof Rübartsch. Addresbuch w 1937 r. wymienia "właściciela schroniska" ("Baudenbesitzer") Maxa jako jedynego Rübartscha w Zieleńcu.  <br>
+Obiekt wyposażony był niegdyś w restaurację i kawiarnię z tarasem widokowym.
+Po 1945 roku obiekt ten przestał istnieć.
+
+
+<div class="gallery-modular" id="gallery29">
+
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/rubartsch-baude-1024x654.jpg" class="thumb-img">
+ <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-05-20%20213419.png" class="thumb-img">
+  <img src="https://polska-org.pl/foto/201/Schronisko_Berghof_Rubartsch_dawne_Duszniki_Zdroj_201511.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/225/Schronisko_Berghof_Rubartsch_dawne_Duszniki_Zdroj_225442.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/174/Panoramy_i_widoki_Zielenca_Duszniki_Zdroj_174987.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6086/Schronisko_Berghof_Rubartsch_dawne_Duszniki_Zdroj_6086870.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6087/Schronisko_Berghof_Rubartsch_dawne_Duszniki_Zdroj_6087097.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6087/Schronisko_Berghof_Rubartsch_dawne_Duszniki_Zdroj_6087153.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6087/Schronisko_Berghof_Rubartsch_dawne_Duszniki_Zdroj_6087162.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6134/Schronisko_Berghof_Rubartsch_dawne_Duszniki_Zdroj_6134751.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/394/Schronisko_Berghof_Rubartsch_dawne_Duszniki_Zdroj_394862.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox29">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery29');
+  const lightbox = document.getElementById('lightbox29');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+Szczególnie polecam przejrzeć widoki z okien tego schroniska.
+
+
+
+<div class="gallery-modular" id="gallery30">
+
+  <img src="https://polska-org.pl/foto/8411/Widoki_ze_schroniska_Duszniki_Zdroj_8411812.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6087/Panoramy_i_widoki_Zielenca_Duszniki_Zdroj_6087003.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6087/Panoramy_i_widoki_Zielenca_Duszniki_Zdroj_6087005.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6087/Widoki_ze_schroniska_Duszniki_Zdroj_6087069.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox30">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery30');
+  const lightbox = document.getElementById('lightbox30');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:1px solid #ccc;"></div>
+<br>
+
+<h3>Hindenburgbaude</h3><br>
+
+Idąc dalej, po lewej, na zakręcie, mijamy miejsce po najważniejszym i najbardziej znanym obiekcie w przedwojennym Zieleńcu 
+(oraz w całej okolicy) – <b>
+schronisku Hindenburgbaude </b>(zielony znacznik na fotce poniżej; czerwony znacznik to omawiany przed chwilą Berghof Rübartsch).
+<br><br>
+Poniżej także rzut pionowy z ortofotomapy (którą polecałem na samym początku), przedstawiający ruiny po schronisku w 1953 r. 
+<a href="https://maps.app.goo.gl/4K9iwMC3vpRQiSqVA" target="_blank">Orientacyjna lokalizacja schroniska.</a>
+<br><br>
+<div class="gallery-modular" id="gallery31">
+
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/hin-1024x654.jpg" class="thumb-img">
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_5575604-1024x503.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox31">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery31');
+  const lightbox = document.getElementById('lightbox31');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+<br><br>
+
+
+
+
+
+<br><br>
+
+Za J. Suchodolskim:
+<br><br>
+
+<blockquote style="margin-left: 20px; font-style: italic; color: #fff;">
+W roku 1948 przestało istnieć Hindenburgbaude, wybudowane w 1928 roku. Autorem tego udanego projektu był Konrad Goebel, 
+członek GGV [<a href="https://pl.wikipedia.org/wiki/K%C5%82odzkie_Towarzystwo_G%C3%B3rskie" target="_blank">Glatzer Gebirgsverein – 
+Kłodzkie Towarzystwo Górskie</a> – przyp. MG] i architekt miasta Kłodzka. 
+GGV było również inwestorem. 
+<br><br>Zlokalizowane na wysokości 975 m n.p.m., u stóp Orlicy, odznaczało się zwartą formą inspirowaną 
+regionalną architekturą. Drewno jako materiał konstrukcyjny i wykończeniowy stanowiło tu – poza 
+ścianami przy ziemia i fragmentami parteru, wykonanymi z kamienia – podstawowy budulec. Umiejętne połączenie faktury drewnianych 
+ścian z kamiennymi elementami w strefie wejściowej podkreślało rodzimy charakter obiektu. W bryle schroniska na pierwszy plan wysuwał 
+się z pewnością potężny, dwuspadkowy, kryty gontem, stromy dach z naczółkami. 
+<br><br>Na wysoką ocenę zasługiwało również rozplanowanie funkcji 
+schroniska, zwłaszcza jego części parterowej, z pomieszczeniami przeznaczonymi dla gości, gdzie projektantowi udało się stworzyć wnętrza 
+o indywidualnym charakterze. Utrzymane w regionalnym wystroju, z drewnianą snycerką, dawały poczucie solidności i bezpieczeństwa. Obok 
+schroniska znajdował się dystrybutor z benzyną, gdyż możliwy był tu  dojazd samochodem osobowym. 
+<br>Niestety, obiekt ten spłonął w listopadzie 
+1948 roku, zaś przyczyną pożaru była prawdopodobnie awaria w kotłowni. 
+<br><br><b>Schronisko to, co należy jeszcze raz podkreślić, należało obok 
+Samotni (Kleine Teichbaude) nad Małym Stawem w Karkonoszach i Lucyny (Max Müllerbaude) w Górach Sowich, do piękniejszych w Sudetach, 
+co czyni jego stratę jeszcze dotkliwszą.</b>
+
+</blockquote>
+
+<br><strong>
+<a href="https://polska-org.pl/8756869,Nieznana_historia_schroniska_Hindenburgbaude_w_Zielencu.html" target="_blank">Ze schroniskiem wiąże się pewna naprawdę niebanalna historia.</a>
+
+
+</strong>
+
+<br>
+
+<br><div class="gallery-modular" id="gallery32">
+
+  <img src="https://polska-org.pl/foto/5669/Plany_i_rzuty_obiektu_Duszniki_Zdroj_5669401.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/5669/Plany_i_rzuty_obiektu_Duszniki_Zdroj_5669402.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/5669/Plany_i_rzuty_obiektu_Duszniki_Zdroj_5669404.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox32">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery32');
+  const lightbox = document.getElementById('lightbox32');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+<br>
+
+<br>
+<div class="gallery-modular" id="gallery33">
+
+  <img src="https://polska-org.pl/foto/414/Reklamy_schroniska_Duszniki_Zdroj_414110.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/8664/Reklamy_schroniska_Duszniki_Zdroj_8664162.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6313/Reklamy_schroniska_Duszniki_Zdroj_6313484.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/5631/Reklamy_schroniska_Duszniki_Zdroj_5631586.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox33">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery33');
+  const lightbox = document.getElementById('lightbox33');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+<br>
+
+
+<br>
+
+<div class="gallery-modular" id="gallery34">
+
+  <img src="https://polska-org.pl/foto/5899/Zdjecia_okolicznosciowe_Duszniki_Zdroj_5899596.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6015/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_6015347.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/9894/Zdjecia_okolicznosciowe_Duszniki_Zdroj_9894885.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/5663/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_5663887.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/280/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_280143.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/3428/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_3428437.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/202/Przysiolek_Grabno_dawny_Duszniki_Zdroj_202694.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/190/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_190766.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/309/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_309423.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/257/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_257116.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/65/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_65047.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/64/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_64330.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/187/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_187250.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/197/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_197849.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/322/Przysiolek_Grabno_dawny_Duszniki_Zdroj_322373.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/10953/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_10953846.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6714/Zimowe_panoramy_i_widoki_Zielenca_Duszniki_Zdroj_6714092.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/225/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_225438.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/4727/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_4727117.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/260/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_260660.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6471/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_6471348.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/3491/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_3491849.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/4607/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_4607604.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox34">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery34');
+  const lightbox = document.getElementById('lightbox34');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+<br>
+
+<br>
+<div class="gallery-modular" id="gallery35">
+
+  <img src="https://polska-org.pl/foto/4784/Wnetrze_schroniska_Duszniki_Zdroj_4784604.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/4727/Wnetrze_schroniska_Duszniki_Zdroj_4727169.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/4727/Wnetrze_schroniska_Duszniki_Zdroj_4727177.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/3694/Wnetrze_schroniska_Duszniki_Zdroj_3694266.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/116/Wnetrze_schroniska_Duszniki_Zdroj_116806.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/264/Wnetrze_schroniska_Duszniki_Zdroj_264495.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/8491/Wnetrze_schroniska_Duszniki_Zdroj_8491968.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6086/Wnetrze_schroniska_Duszniki_Zdroj_6086993.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/11065/Wnetrze_schroniska_Duszniki_Zdroj_11065787.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox35">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery35');
+  const lightbox = document.getElementById('lightbox35');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:1px solid #ccc;"></div>
+
+<br>
+
+
+
+<h3>Grabno, wcz. Buchenwinkel</h3>
+Po drugiej stronie drogi (poniżej tych średnio urodziwych, trójkątnych domków) znajdował się przysiółek Zieleńca – <b> Grabno</b>, 
+przed wojną Buchenwinkel; dziś pozostały po nim bodaj dwa domy.
+<br><br>
+<div class="gallery-modular" id="gallery36">
+
+  <img src="https://polska-org.pl/foto/202/Przysiolek_Grabno_dawny_Duszniki_Zdroj_202694.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/322/Przysiolek_Grabno_dawny_Duszniki_Zdroj_322373.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/414/Przysiolek_Grabno_dawny_Duszniki_Zdroj_414109.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/30/Przysiolek_Grabno_dawny_Duszniki_Zdroj_30196.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/30/Przysiolek_Grabno_dawny_Duszniki_Zdroj_30197.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6134/Przysiolek_Grabno_dawny_Duszniki_Zdroj_6134033.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6134/Przysiolek_Grabno_dawny_Duszniki_Zdroj_6134749.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox36">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery36');
+  const lightbox = document.getElementById('lightbox36');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+<br><br>
+A propos opuszczonych i wymierających wsi. Poniżej opis wsi Biała Woda, leżącej pod Czarną Górą, około 30 km na wschód od miejsca, w którym teraz się znajdujemy, jednak doskonale pokazujący, w jaki sposób wyludniały się wsie po wojnie w tym rejonie. Tekst dotyczy Białej Wody (dziś wieś istnieje formalnie, choć liczba mieszkańców = 0), ale z powodzeniem można go zastosować do Grabna a także w pewnym stopniu Lasówki czy Zieleńca – one nie wyludniły się co prawda doszczętnie, ale zabudowa, struktura miejscowości i ich charakter znacząco się zmieniły.
+
+ 
+
+<blockquote style="margin-left: 20px; font-style: italic; color: #fff;"><strong>
+Rok 1947</strong><br>
+Wakacje spędzałem na obozie harcerskim w rejonie wsi Biała Woda, k. Idzikowa, Ziemia Kłodzka. Wieś: piękne, zadbane budynki gospodarskie, niektóre w stylu przypominającym tyrolski, dwa duże, brzydkie obiekty wczasowe z czerwonej cegły. Nie było śladu zniszczeń wojennych. Uprawne pola na zboczach Czarnej Góry, wszystkie gospodarstwa zasiedlone przez Polaków „zza Buga”. Podobnie było w okolicznych wsiach i miasteczkach (w Idzikowie, Międzygórzu, Bystrzycy i innych). Na zboczu Czarnej Góry stała luksusowa, niezamieszkana willa otoczona pięknym parkanem, w willi – piękne białe meble (rok już 1947!) w ogrodzie – skałki z roślinnością skalną, m. in. z szarotkami. O wysiedleniu Niemców już zapomniano. Nawet „Wehrwolf” nie miał tam zaplecza. To była już Polska, choć wyglądająca trochę z niemiecka.
+<br><br><br><strong>
+Rok 1957</strong><br>
+Jako student germanistyki dorabiałem pracując przy tzw. unacześnianiu map m.in. w tym samym rejonie, w którym w latach chłopięcych byłem na obozie harcerskim – w Ziemi Kłodzkiej. Cieszyłem się bardzo, że zobaczę tak dobrze mi znaną Białą Wodę i jej okolice. Tym większe było moje rozczarowanie, gdy tej wsi nie mogłem odnaleźć! Po prostu jej już nie było.
+Zniszczone budynki gospodarskie, po willi – ani śladu, jeden z obiektów wczasowych już nie istniał – drugi w trakcie rozbiórki, pola zapuszczone, pokryte odchodami owiec. Na skraju wsi – dwa niezniszczone budynki gospodarskie. W jednym z nich znalazłem grupę mężczyzn – jak się okazało pasterzy. W kuchni, w której stał piec kuchenny, na klepisku pod zerwaną podłogą paliło się ognisko, a nad nim na trójnogu wisiał garnek, w którym coś się gotowało. Pasterze ci, którzy robili na mnie wrażenie ludzi nie z naszych czasów, opowiedzieli mi, że przed kilkoma laty teren wsi wcielono do PGR-u, ludność, już polską (!) wysiedlono w inne strony, bo przecież pustych wsi było jeszcze wiele, zaś rejon wsi zamieniono na PGR-owskie pastwiska dla owiec. Większość gospodarstw w Białej Wodzie rozebrano i nadal rozbierano. Zostało kilka budynków dla pasterzy i chyba leśnictwo. Gdy byłem tam po raz trzeci w roku 1982 po wsi nie został nawet ślad! Ostała się tylko leśniczówka.
+
+ </blockquote>
+
+<i>za: mochowie.pl</i>
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:1px solid #ccc;"></div>
+
+
+
+<h3>Kamień Rübartscha</h3><br>
+Stoimy przy kamieniu poświęconym postaci Heinricha Rübartscha, bardzo ważnej dla okolicy postaci. 
+Wspominaliśmy go wcześniej, będąc w Zieleńcu.
+<br><br>
+Heinrich Rübartsch (ur. 1852 w Niwie, zm. 29 marca 1930 w Zieleńcu) – piwowar, oberżysta, prekursor turystyki i narciarstwa w rejonie 
+Zieleńca i Orlicy, zwany Liczyrzepą z Orlicy.<br>
+W latach 70. XIX wieku, po śmierci starszego brata Józefa, po którym przejął gospodę, osiedlił się w Zieleńcu i stał się oberżystą. 
+W 1882 r. wybudował na szczycie Orlicy (gdzie zaraz idziemy) 16-metrową drewnianą wieżę widokową, 
+obok której postawił małą gospodę Gasthaus zur Hohen Mense, rozbudowaną dwa lata później. Od tego czasu przeniósł się na 
+Orlicę, a gospodę w Zieleńcu pozostawił swojej rodzinie. Na początku XX wieku na Orlicy wybudował nowe, duże schronisko 
+górskie Hohe Mense-Baude, które prowadził aż do śmierci. <br><br>Był propagatorem czynnego wypoczynku oraz prekursorem turystyki i 
+narciarstwa w rejonie Orlicy i Zieleńca. Już pod koniec XIX w. jeździł na nartach, które otrzymał od księcia Colloredo-Mansfelda z 
+Opočna. Jazdę na bukowych deskach, długich wówczas na 240 cm, z rzemiennymi wiązaniami i tylko jednym kijkiem opanował po mistrzowsku.<br><br>
+Heinrich Rübartsch zmarł po trzydniowej chorobie 29 marca 1930 r. w wieku 78 lat. Całym swoim życiem zapracował na sławę po obu stronach 
+granicy. Był postacią niezwykle popularną i malowniczą, znaną w środkowych i wschodnich Niemczech. Ze względu na swój wygląd bywał nazywany Liczyrzepą (niem. Rübezahl) z Orlicy lub kłodzkim Liczyrzepą, a najczęściej zwano go po prostu ojcem Rübartschem.
+
+ 
+<br><br><br>
+Za Suchodolskim:
+<br>
+<blockquote style="margin-left: 20px; font-style: italic; color: #fff;">
+Heinrich Rübartsch, prekursor narciarstwa w Zieleńcu, współtwórca rozwoju i jego znaczenia w Sudetach jako ośrodka turystycznego. 
+Odchodząc w 1930 roku ze świata żywych pozostawił po sobie jeszcze rzecz równie cenną, 
+wspomnienie jako o osobie nieodmawiającej nikomu pomocy nieraz w ekstremalnych górskich warunkach.
+
+ </blockquote>
+
+
+
+<div class="gallery-modular" id="gallery37">
+
+  <img src="https://polska-org.pl/foto/3849/Heinrich_Rubartsch_1852_1930_Duszniki_Zdroj_3849507.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/5811/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_5811022.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox37">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery37');
+  const lightbox = document.getElementById('lightbox37');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+
+<br>
+
+
+
+<div style="width:80%;margin:30px auto;border-top:1px solid #ccc;"></div>
+<br>
+
+<h3>Orlica; 1084 m n.p.m. </h3>
+Orlica (niem. Hohe Menze lub Hohe Mense, czes. Vrchmezí) – najwyższy szczyt polskiej części Gór Orlickich i 
+polskich Sudetów Środkowych. Szczyt graniczny. Dawniej nazywana była Międzywierchem, co przypomina nazwę czeską, 
+ale oznacza coś innego. Międzywierch, to po czesku Mezivrch, natomiast czeska nazwa góry - Vrchmezí, to po polsku Wierch Graniczny, Wierch Miedzowy.
+<br><br>
+Ze szczytu rozciąga się piękny, panoramiczny widok na całą okolicę, włącznie z Karkonoszami i ich najwyższczym szczytem - Śnieżką. 
+
+
+
+
+
+<br>
+A skoro mowa o panoramach - polecam XIX-wieczną ilustrację w postaci panoramicznego widoku z Orlicy z roku 1885 – coś pięknego! Poniżej miniatura, a <a href="https://photos.szukajwarchiwach.gov.pl/6f518f7cfd5bc6d9237ae2338eca2d81a91ba0395a88d85b33686310b5879077_max" target="_blank">TUTAJ</a> w wysokiej rozdzielczości.
+
+<div class="gallery-modular" id="gallery39">
+
+  <img src="https://polska-org.pl/foto/8839/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_8839128.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6134/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_6134950.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6134/Schronisko_Hindenburgbaude_dawne_Duszniki_Zdroj_6134953.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/9093/Widoki_z_wiezy_na_Orlicy_Duszniki_Zdroj_9093133.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/7185/Widoki_z_Orlicy_Duszniki_Zdroj_7185358.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox39">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery39');
+  const lightbox = document.getElementById('lightbox39');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+
+Na Orlicy widzisz czwartą już wieżę widokową w tym miejscu – z 2020 r. Wieża o drewnianej konstrukcji wznosi się na wysokość 25,5 m. Składa się z trzech podestów spoczynkowych na poziomach 8,75 m, 13,65 m i 18,55 m, z których rozciąga się widok na całą okolicę. Widok z wieży jest dużo lepszy niż z wieży na pobliskiej Wielkiej Destnej. <br>Autor projektu: Infra-Tel, Rybnik. Wartość robót: 750 tys. zł.
+<br><br>
+
+Przed wojną i tuz po niej znajdowało się w tym miejscu schronisko Hohe Mense-Baude wspominanego wcześniej Heinricha Rübartscha oraz drewniana wieża przez niego postawiona. To ruiny tego schroniska widzicie obok wieży dziś.
+<br><br>
+Wieża widokowa o wysokości 16 m została wzniesiona na Orlicy w 1881 r. przez Heinricha Rübartscha (1852–1930), właściciela znanej gospody w Zieleńcu, pioniera turystyki górskiej i narciarstwa w tym regionie, przy pomocy Glatzer Gebirgsverein. Obok, w 1882 r. została przez niego uruchomiona i prowadzona gospoda. W 1883 r. H. Rübartsch rozbudował obiekt, uruchamiając noclegi. Obecnie zostały po nim jedynie nikłe ślady podmurowań.
+<br><br>
+Na pierwszym z poniższych zdjęć "Ojciec" Rübartsch we własnej osobie stoi przed schroniskiem.
+<br>
+<div class="gallery-modular" id="gallery40">
+
+  <img src="https://polska-org.pl/foto/4727/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_4727393.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/265/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_265094.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/3404/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_3404065.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/351/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_351435.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/357/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_357562.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/281/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_281330.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/8771/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_8771527.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/5602/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_5602778.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6636/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_6636858.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/5404/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_5404022.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/4600/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_4600978.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox40">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery40');
+  const lightbox = document.getElementById('lightbox40');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+ 
+<br><br>
+O schronisku pisze J. Suchodolski:
+<br>
+<blockquote style="margin-left: 20px; font-style: italic; color: #fff;">
+
+Hohe Mense-Baude (1084 m n.p.m.), wzniesiono stopniowo, dzięki staraniom jego właściciela Heinricha Rübartscha, tuż poniżej szczytu Orlicy, przy granicy austriacko-pruskiej. Charakteryzowało się prostą formą, a w jego skład wchodziły dwa budynki o konstrukcji zrębowo-murowanej, przekryte stromymi, dwuspadkowymi dachami, ze stojącą obok wieżą widokową o drewnianej konstrukcji. Zapewniały one turystom wypoczynek i nocleg dla dziesięciu osób w pokojach i 25 miejsc w pomieszczeniu zbiorowym. Głównym atutem tego miejsca, jak się wydaje, była otaczająca przyroda oraz cisza i spokój, co tak cenił sobie, zwłaszcza pod koniec życia, Heinrich Rübartsch.
+</blockquote>
+ 
+<br><br>
+Wszystkie źródła mówią, że schronisko doszczętnie spłonęło w 1946 r., jednak na czeskiej ortofotmapie, którą już wielokrotnie tu oglądaliśmy, widać, że Hohe Mense-Baude miała dach i (chyba) dobrze trzymała się jeszcze w 1953 r.
+
+
+<div class="gallery-modular" id="gallery41">
+
+  <img src="https://raw.githubusercontent.com/margom23/Przewodnik-zieleniec/refs/heads/main/zdjecia/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Dusznikcccc_Zdroj_5575728.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/5575/Schronisko_i_wieza_widokowa_na_Orlicy_dawne_Duszniki_Zdroj_5575728.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox41">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery41');
+  const lightbox = document.getElementById('lightbox41');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+<br>
+
+Od tego momentu wędrujemy wydeptaną ścieżką wzdłuż polsko-czeskiej granicy. Mijamy czeski rezerwat Bukačka, szczyt Šerlich, górne stacje zielenieckich wyciągów, aż dochodzimy do ostatniej atrakcji wycieczki - Masarykovej chaty.
+
+<br>
+
+<div style="width:80%;margin:30px auto;border-top:1px solid #ccc;"></div>
+
+<h3>Schronisko Masarykova chata</h3>
+
+Masarykova chata (Masaryk-Baude, Sudeten-Baude) - schronisko na południowo-wschodnim zboczu Šerlicha na rozległej odsłoniętej polanie, na wysokości 1013 m n.p.m., przy granicy państwowej z Polską.<br><br>
+Schronisko zostało zbudowane w latach 1924–1925 przez Klub Czechosłowackich Turystów z Hradca Králové. Otwarcie obiektu nastąpiło w dniu 27.09.1925 r. Uczczono w ten sposób 75. urodziny pierwszego prezydenta Czechosłowacji Tomáša Garrigue'a Masaryka. Dziesięć lat później, 8 września 1935 roku, odsłonięto przed schroniskiem popiersie prezydenta Masaryka. <br>
+<br>Największą atrakcją schroniska jest duża sala jadalna ze stojącym pośrodku drewnianym słupem z dwoma reliefami. Jeden z nich przedstawia literę "G" i czeskiego lwa, symbolizującego herb Hradca Kralove. Na jednej ze ścian wisi pod sufitem rzeźba ducha Gór Orlickich (Rampušáka) z 1941 roku. Przeciwległy zakątek sali jadalnej zdobi ogromny portret prezydenta Masaryka. 
+<br>
+<br>
+
+W pobliżu schroniska, w latach 1997-2007, funkcjonowało polsko-czeskie turystyczne przejście graniczne Zieleniec-Masarykova chata.
+
+
+<div class="gallery-modular" id="gallery42">
+
+  <img src="https://polska-org.pl/foto/6139/Schronisko_Masarykova_chata_6139699.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6139/Schronisko_Masarykova_chata_6139700.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6875/Schronisko_Masarykova_chata_6875410.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6875/Schronisko_Masarykova_chata_6875421.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6875/Schronisko_Masarykova_chata_6875413.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/5979/Schronisko_Masarykova_chata_5979384.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6139/Schronisko_Masarykova_chata_6139076.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/9077/Schronisko_Masarykova_chata_9077288.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/6138/Schronisko_Masarykova_chata_6138938.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/9291/Przejscie_graniczne_Zieleniec_Masarykova_chata_Duszniki_Zdroj_9291381.jpg" class="thumb-img">
+  <img src="https://polska-org.pl/foto/9291/Schronisko_Masarykova_chata_9291386.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox42">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery42');
+  const lightbox = document.getElementById('lightbox42');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:1px solid #ccc;"></div>
+<br>
+<h3>Trčkov</h3><br>
+Spod schroniska wracamy do Polski żółtym szlakiem przez wymierającą wioskę Trčkov (niem. Trtschkadorf). <br><br>
+
+Od 1750 roku Trčkov był niezależną gminą i podlegał administracyjnie powiatowi Żamberk. W 1913 roku mieszkało tu 527 mieszkańców narodowości niemieckiej oraz jeden mieszkaniec narodowości czeskiej. W 1939 roku odnotowano 372 mieszkańców zamieszkujących 86 domów.
+<br><br>
+Po II wojnie światowej niemieccy mieszkańcy zostali wysiedleni. Opuszczone domy były niszczone lub palone przez partyzantów, a z czasem uległy całkowitej degradacji. Obecnie w rejonie Trčkova zachowało się jedynie kilka budynków oraz ruiny dawnych zabudowań. Pamiątką po dawnej wsi jest drewniany krzyż.
+<br><br>
+W 1982 roku na tym terenie utworzono Rezerwat Przyrody Trčkov.
+
+
+<br><br><br><br><br>Po dłuższej chwili docieramy do Dzikiej Orlicy i przechodzimy na polską stronę granicy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:1px solid #ccc;"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+    </div>
+
+<br><br><br>
+   <p style="font-size: 12px;"> Wszystkie fotografie i inne multimedia wykorzystane w niniejszym przewodniku pochodzą z ogólnodostępnych źródeł, w szczególności polska.org.pl, dbc.wroc.pl, sbc.org.pl oraz inncyh źródeł wskazanych bezpośrednio w treści strony.
+
+<br>Materiały te zostały wykorzystane wyłącznie w celach krajoznawczych, edukacyjnych oraz popularyzatorskich, służących szerzeniu wiedzy o regionie Ziemi Kłodzkiej. Strona nie ma charakteru komercyjnego, a jej autor nie czerpie żadnych korzyści majątkowych z publikacji ww. treści.
+
+<br>Wszelkie prawa autorskie do wykorzystanych materiałów należą do ich pierwotnych właścicieli. W przypadku jakichkolwiek wątpliwości lub zastrzeżeń prosimy o kontakt w celu niezwłocznego wyjaśnienia sprawy lub usunięcia wskazanych treści.
+
+</p>
+</div>
+
+<script>
+function openContent(id, btn) {
+    let contents = document.getElementsByClassName("content");
+    for (let i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+    }
+
+    let buttons = document.getElementsByClassName("accordion");
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove("active");
+    }
+
+    document.getElementById(id).style.display = "block";
+    btn.classList.add("active");
+}
+</script>
+</body>
+</html>
