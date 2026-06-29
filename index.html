@@ -1,0 +1,3837 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>PRZEWODNIK Kamienica-Śnieżnik</title>
+
+  <link rel="icon" type="image/png" href="https://media.istockphoto.com/id/1366063664/pl/wektor/turystyka-g%C3%B3rska-wektorowa-linia-projektowania-pojedyncza-izolowana-ikona.jpg?s=612x612&w=0&k=20&c=D9IrQfC36wwJems60Xut7RPqcIK_PSiGQIeu_NK4jus=">
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://polska-org.pl/foto/211/Schronisko_Na_Sniezniku_im_Zbigniewa_Fastnachta_ul_Sniezna_Miedzygorze_211223.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+/* przyciemnienie tła */
+.overlay {
+    background: rgba(0,0,0,0.7);
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+/* nagłówek */
+h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 36px;
+}
+
+/* banner */
+.banner {
+    width: 100%;
+    height: 40vh;
+    min-height: 400px;
+    max-height: 650px;
+    background: url('https://czarnagora.pl/wp-content/uploads/2023/05/snieznik-wieza-2022-00.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/* układ przycisków */
+.accordion-container {
+    margin-top: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row.bottom {
+    justify-content: center;
+    gap: 20px;
+}
+
+/* zakładki */
+.accordion {
+    background-color: #2c3e50;
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 220px;
+    transition: 0.3s;
+}
+.content a {
+  color: #ffd966; /* jasny żółty - dobrze widoczny na ciemnym tle */
+  text-decoration: underline; /* opcjonalnie podkreślenie */
+}
+
+
+
+
+
+
+.content a:hover {
+  color: #fff; /* zmiana koloru po najechaniu */
+}
+/* hover */
+.accordion:hover {
+    background-color: #3d5a73;
+}
+
+/* aktywna zakładka */
+.accordion.active {
+    background-color: #1abc9c;
+}
+
+
+.content {
+    display: none;
+    padding: 20px;
+    margin: 20px auto;
+    width: 70%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    text-align: left; /* 🔥 to naprawia problem */
+}
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <h1>PRZEWODNIK</h1>
+<h2>Kamienica-Śnieżnik</h2>
+
+
+<div class="author-box">
+    &copy; <a href="mailto:marcel.goman@gmail.com" style="color: inherit; text-decoration: none;">
+  Marcel Goman
+</a>
+</div><br><br>
+    <div class="banner"></div>
+
+    <div class="accordion-container">
+
+        <div class="row">
+            <button class="accordion" onclick="openContent('info', this)">Informacje ogólne</button>
+        </div>
+
+        <div class="row bottom">
+            <button class="accordion" onclick="openContent('short', this)">Kamienica</button>
+ <button class="accordion" onclick="openContent('snieznik', this)">Spacer na Śnieżnik</button>
+            <button class="accordion" onclick="openContent('long', this)">Ścieżka w obłokach</button>
+        </div>
+
+    </div>
+
+    <!-- TREŚCI -->
+
+    <div id="info" class="content">
+        <h2>
+
+
+                <p><h2><p style="text-align: justify;">Rozpoczynamy wędrówkę po urokliwych zakątkach Masywu Śnieżnika (Glatzer Schneeberg, Spieglitzer Schneeberg, Králický Sněžník, Kladský Sněžník, do 1965 r. - Śnieżnik Kłodzki), Kamienicy (wcz. Kamnitz) i okolic. <br><br></h2>
+
+
+
+
+
+
+
+
+
+<!-- Separator Zigzag -->
+<div class="zigzag-separator"></div>
+
+<style>
+.zigzag-separator {
+  width: 100%;
+  height: 20px; /* wysokość zigzaga */
+  background: repeating-linear-gradient(
+    45deg,
+    #004aad,      /* kolor linii */
+    #004aad 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  margin: 30px 0; /* odstęp od sekcji */
+}
+</style>
+
+
+
+
+
+
+<!-- Galeria jednozdjęciowa -->
+<div class="gallery" id="gallery-single">
+  <img src="https://raw.githubusercontent.com/margom23/przewodnik/refs/heads/main/zdjecia/Grafschaft_Glatz-1939_3-strony.jpg"
+       onclick="openSingleLightbox(this)"
+       class="thumb-img" alt="Ilustracja">
+</div>
+
+<!-- Lightbox jednozdjęciowy -->
+<div id="single-lightbox-container" class="lightbox-full" onclick="closeSingleLightbox()">
+  <img id="single-lightbox-img" src="">
+</div>
+
+<style>
+/* Miniaturka */
+#gallery-single { display:flex; justify-content:center; margin:20px 0; }
+#gallery-single .thumb-img { width:25%; max-width:200px; cursor:pointer; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2); transition: transform 0.3s; }
+#gallery-single .thumb-img:hover { transform: scale(1.05); }
+
+/* Lightbox jednozdjęciowy */
+#single-lightbox-container {
+  display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.9); z-index:9999; text-align:center;
+}
+#single-lightbox-container img { max-width:90%; max-height:90%; margin-top:5%; border-radius:6px; }
+
+@media(max-width:600px){
+  #gallery-single .thumb-img{ width:45%; max-width:150px; }
+}
+</style>
+
+<script>
+// Funkcje lightbox dla pojedynczego zdjęcia
+function openSingleLightbox(img){
+  document.getElementById('single-lightbox-img').src = img.src;
+  document.getElementById('single-lightbox-container').style.display = 'block';
+}
+function closeSingleLightbox(){
+  document.getElementById('single-lightbox-container').style.display = 'none';
+}
+</script>
+
+
+Poniżej znajduje się zbiór przedwojennych oraz polskich map terenów, które będziemy odwiedzać. Wycinki z tych map będziemy oglądać przy okazji odwiedzin w konkretnych miejscach.
+<em>(Pliki z mapami są dość duże, mapy mogą się otwierać dłuższą chwilę. Na wielu widznieje oznaczenie "Wilhelmstahl" - to dzisiejszy Bolesławów - dziś niewielka wieś, ale przed wojną miasto, siedziba parafii.)</em>
+</p>
+<br> 
+<ul>
+
+
+
+  <li>Mapa hrabstwa z lat 20. XX w. – <a href="http://maps.mapywig.org/m/German_maps/various/Topographic_and_tourist_maps/KARTE_der_GRATSCHAFT_GLATZ_125K.jpg" target="_blank">Zobacz mapę</a></li>
+
+  <li>Mapa Briegera z lat 30. XX w. – <a href="http://maps.mapywig.org/m/German_maps/various/Topographic_and_tourist_maps/Briegers_Wegekarte_der_Graftschaft_Glatz_75K.jpg" target="_blank">Zobacz mapę</a></li>
+
+  <li>Mapa całego regionu z 1932 r. – <a href="http://maps.mapywig.org/m/German_maps/series/100K_KDR_Kreiskarten/Graftschaft_Glatz_100K_RfL_1932.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa całego regionu z 1938 r. – <a href="http://maps.mapywig.org/m/German_maps/series/075K_Sudetenland/Sudentelnades_75K_3857_Glatz_1938.jpg" target="_blank">Zobacz mapę</a></li>
+
+
+<li>Mapa ogólna ziemi kłodzkiej z 1948 r. – <a href="http://maps.mapywig.org/m/Polish_maps/various/Topographic_and_tourist_maps/KOTLINA_KLODZKA_I_GORY_PRZYLEGLE_100K_1948.jpg" target="_blank">Zobacz mapę</a></li>
+<br>
+<br>
+
+
+
+  <li>Mapa okolic Kamienicy z 1883 r. – <a href="http://maps.mapywig.org/m/German_maps/series/025K_TK25/5767_(3342)_Wilhelmsthal_1883_IfL.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa okolic Kamienicy z 1912 r. – <a href="http://maps.mapywig.org/m/German_maps/series/025K_TK25/5767_Wilhelmsthal_1912_BCUWr7231-32096-45376.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa okolic Kamienicy z 1936 r. – <a href="http://maps.mapywig.org/m/German_maps/series/025K_TK25/5767_Wilhelmsthal_1936_McM91028.jpg" target="_blank">Zobacz mapę</a></li>
+  <li> Mapa okolic Kamienicy z 1938 r. – <a href="http://maps.mapywig.org/m/German_maps/series/025K_TK25/5767_5768_Wilhelmsthal_1938_nnv32p5_BN_Sygn.ZZK_S-29_379_A.jpg" target="_blank">Zobacz mapę</a></li>
+<br>
+<br>
+
+ <li>Położenie Masywu Śnieżnika na mapie Jonasa Scultetusa z 1625 r. (orientacja mapy zachodnia - północ jest po prawej stronie) – <a href="https://polska-org.pl/foto/6313/Mapy_Masywu_Snieznika_6313286.jpg" target="_blank">Zobacz mapę</a></li>
+
+
+
+
+
+ <li>Mapa Masywu Śnieżnika z przewodnika Wilhelma Patschovskiego z 1912 r. – <a href="https://polska-org.pl/foto/6534/Snieznik_1423_m_6534911.jpg" target="_blank">Zobacz mapę</a></li>
+ <li>Mapa Masywu Śnieżnika z lat 1910-1930 – <a href="https://polska-org.pl/foto/4381/Mapy_Masywu_Snieznika_4381183.jpg" target="_blank">Zobacz mapę</a></li> 
+<li>Mapa Masywu Śnieżnika ze szlakami turystycznymi z 1935 r.  – <a href="https://polska-org.pl/foto/7028/Mapy_i_plany_Ladka_Zdroju_Ladek_Zdroj_7028167.jpg" target="_blank">Zobacz mapę</a></li>
+
+
+</ul>
+<br>
+<h4>Mapy sztabowe WP:</h4>
+<ul>
+  <li>Mapa okolic Śnieżnika z 1958 r. – <a href="http://maps.mapywig.org/m/Polish_maps/series_PRL/025_SGWP/M-33-70-B-c_(MIEDZYGORZE)_1958.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa Kamienicy z 1958 r. – <a href="http://maps.mapywig.org/m/Polish_maps/series_PRL/025_SGWP/M-33-70-B-d_(NOVA_MORAVA)_1958.jpg" target="_blank">Zobacz mapę</a></li>
+</ul>
+<br>
+<p>
+Polecam też świetne narzędzie, jakim jest <a href="https://geoportal.gov.cz/web/guest/map" target="_blank">czeska ortofotomapa tego rejonu z roku 1953</a>. Po otwarciu linku należy kliknąć w menu po prawej 'ortofotomapa (50. leta)', jednocześnie odznaczyć 'topograficke mapy'. 
+<br>
+Poniżej widzisz wycinek z tej mapy przedstawiający szczyt Śnieżnika (wieża widokowa rzucająca wyraźny cień w środku kadru) wraz z dzisiejszym Schroniskiem Na Śnieżniku im. Zbigniewa Fastnachta (po lewej od wieży) i nieistniejącym Schroniskiem Księcia Liechtensteina (na południowy wschód od wieży).
+</p>
+
+
+
+
+
+<!-- Galeria jednozdjęciowa -->
+<div class="gallery" id="gallery-single">
+  <img src="https://raw.githubusercontent.com/margom23/kamienica/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-06-29%20120059.png"
+       onclick="openSingleLightbox(this)"
+       class="thumb-img" alt="Ilustracja">
+</div>
+
+<!-- Lightbox jednozdjęciowy -->
+<div id="single-lightbox-container" class="lightbox-full" onclick="closeSingleLightbox()">
+  <img id="single-lightbox-img" src="">
+</div>
+
+<style>
+/* Miniaturka */
+#gallery-single { display:flex; justify-content:center; margin:20px 0; }
+#gallery-single .thumb-img { width:25%; max-width:200px; cursor:pointer; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2); transition: transform 0.3s; }
+#gallery-single .thumb-img:hover { transform: scale(1.05); }
+
+/* Lightbox jednozdjęciowy */
+#single-lightbox-container {
+  display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.9); z-index:9999; text-align:center;
+}
+#single-lightbox-container img { max-width:90%; max-height:90%; margin-top:5%; border-radius:6px; }
+
+@media(max-width:600px){
+  #gallery-single .thumb-img{ width:45%; max-width:150px; }
+}
+</style>
+
+<script>
+// Funkcje lightbox dla pojedynczego zdjęcia
+function openSingleLightbox(img){
+  document.getElementById('single-lightbox-img').src = img.src;
+  document.getElementById('single-lightbox-container').style.display = 'block';
+}
+function closeSingleLightbox(){
+  document.getElementById('single-lightbox-container').style.display = 'none';
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="short" class="content">
+        <h2>
+Bazą wypadową do dalszych wycieczek jest Kamienica, przedwojenna Kamnitz. Dowiedzmy się zatem o niej czegoś więcej.
+
+
+
+</h2>
+Kamienica to niewielka wieś w dolinie potoku Kamienica. Została założona w 1596 r. dla prowadzenia wyrębu lasu i przetwórstwa drewna. W tym okresie w Kamienicy rozwijało się rzemiosło, handel i rolnictwo. <br> Na przełomie XV i XVI w. wydobywano rudę żelaza dla miejscowej huty. W XVII i XVIII w. Kamienica była ośrodkiem tkactwa. W XIX w. znacznie wzrosła atrakcyjność tej wsi. Od 1866 r. celem wycieczek była książęca leśniczówka. <br>W końcu stulecia przez wieś wiodła jedna z najpiękniejszych tras na Śnieżnik z atrakcyjnym dojściem przez leje (dzisiejsza Droga pod Lejami, którą będziecie wracać ze Śnieżnika). Ponadto wieś stała się letniskiem i ośrodkiem narciarskim. 
+
+ <br> <br>
+
+Jedno z poniższych zdjęć, pochodzące z 1972 r., przedstawia redaktora (z mikrofonem) rozmawiającego ze Zbigniewem Holiczem (ówczesny I sekretarz powiatowej PZPR) na temat planów budowy "Drugiego Zakopanego" w okolicach Śnieżnika. Całe szczęście nic z tego nie wyszło. Fotografia to zrzut z filmu dokumentalnego "Drugie Zakopane".
+
+
+
+<div class="gallery-modular" id="gallery1">
+ 
+  <img src="https://polska-org.pl/foto/398/Mlyn_dawny_Kamienica_398834.jpg" class="thumb-img">
+
+  <img src="https://polska-org.pl/foto/6202/Kamienica_6202869.jpg" class="thumb-img">
+
+  <img src="https://polska-org.pl/foto/10185/Kamienica_10185030.jpg" class="thumb-img">
+
+  <img src="https://polska-org.pl/foto/8058/Panoramy_i_widoki_Kamienicy_Kamienica_8058747.jpg" class="thumb-img">
+
+  <img src="https://polska-org.pl/foto/3823/Panoramy_i_widoki_Kamienicy_Kamienica_3823593.jpg" class="thumb-img">
+
+  <img src="https://polska-org.pl/foto/10184/Dom_nr_9_Kamienica_10184999.jpg" class="thumb-img">
+</div>
+
+<div class="lightbox-modular" id="lightbox1">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+
+@media(max-width:600px){
+  .lb-prev, .lb-next{
+    font-size:35px;
+  }
+}
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery1');
+  const lightbox = document.getElementById('lightbox1');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+
+
+
+Zarówno dziś, jak i przed wojną, Kamienica była częścią parafii św. Józefa Oblubieńca w Bolesławowie. W 1937 r. wieś liczyła aż 359 mieszkańców (<a href="https://sbc.org.pl/dlibra/publication/333847/edition/315493/einwohnerbuch-1937-1-teil-landkreis-glatz-mit-allen-gemeinden-einschliesslich-der-stadte-bad-reinerz-lewin-neurode-wunschelburg-2-teil-kreis" target="_blank">Einwohnerbuch 1937, s. 407</a>) a jej sołtysem (niem. Bürgermeister) był rolnik August Reinelt. <br><br>
+Według danych z Narodowego Spisu Powszechnego 2021 (GUS) Kamienica liczyła już jedynie 65 mieszkańców. Z tego 33 stanowiły kobiety, a 32 mężczyźni.
+<br>
+Dla porównania, w raporcie gminy na koniec 2024 r. odnotowano 62 stałych mieszkańców sołectwa Kamienica, co wskazuje na niewielki spadek liczby ludności po spisie.
+
+<br><br><a href="https://adressbuecher.genealogy.net/search?placeId=KAMITZJO80KF" target="_blank">
+W tym miejscu</a> znajdziesz spis mieszkańców Kamienicy z roku 1937.
+
+
+<br><br>
+Jak donosi "Verzeichnis der Pfarreien, Kuratien, Geistlichen und Ordensniederlassungen in der Grafschaft Glatz" z 1939 r. wspomniana wyżej parafia w Bolesławowie (wliczając zarówno sam Bolesławów, jak również okoliczne wsie należące do parafii - m.in. Kamienicę czy Morawę) liczyła aż 1369 katolików i 21 "innowierców", zepewne protestantów. Proboszczem był ustanowiony 1 sierpnia 1936 r. ks. Bruno Kleffe (ur. w 1896 r.) <a href="https://www.dbc.wroc.pl/dlibra/publication/7743/edition/7061/content" target="_blank">(Verzeichnis[...], ss. 54-55)</a>. <br><br>Parafia dziś nosi wezwanie św. Józefa Oblubieńca NMP, ale oryginalnie jej tytuł brzmiał "hl. Nährvaters Joseph". 'Nährvater' to teologiczny termin w języku niemieckim, który w dosłownym tłumaczeniu oznacza „ojca żywiciela”.
+
+
+<br><br>
+
+
+
+
+
+<div class="gallery-modular" id="gallery2">
+
+  <img src="https://raw.githubusercontent.com/margom23/kamienica/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-06-29%20141023.png" class="thumb-img">
+<img src="https://raw.githubusercontent.com/margom23/kamienica/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-06-29%20141055.png" class="thumb-img">
+<img src="https://raw.githubusercontent.com/margom23/kamienica/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-06-29%20141113.png" class="thumb-img"></div>
+
+<div class="lightbox-modular" id="lightbox2">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery2');
+  const lightbox = document.getElementById('lightbox2');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+
+Ciekawostką (choć nie wiem, czy to odpowiednie słowo w tym kontekście) Kamienicy jest mało znany fakt istnienia na obrzeżach wsi Obozu Służby Pracy Rzeszy (RAD-Lager Eibichgrund Kamnitz 4/114). Obóz istniał w latach ~1937-45.
+
+
+
+
+
+
+<br>
+
+
+
+<br>
+Reichsarbeitsdienst (RAD; pol. Służba Pracy Rzeszy) – masowa organizacja przystosowania obywatelskiego i wojskowego młodzieży w III Rzeszy, która w trakcie II wojny światowej wykonywała funkcje pomocnicze wobec Wehrmachtu. W 1933 po dojściu do władzy przez NSDAP, jej kierownictwo zainteresowało się działalnością Konstantina Hierla, który prowadził działalność wśród młodzieży na rzecz kształtowanie postaw obywatelskich poprzez naukę i pracę. Konstatntin Hierl na polecenie Adolfa Hitlera został mianowany sekretarzem ds. pracy (Staatssekretär) w Ministerstwie Pracy (Reichsarbeitsministerium). Stworzył on wtedy organizację o nazwie Reichsarbeitsdienst i został jej przywódcą przyjmując tytuł Reichsarbeitsführer.
+
+<br><br>
+
+Celem organizacji było kształtowanie postaw młodzieży wobec państwa poprzez pracę. Początkowo do organizacji wstępowali ochotnicy. W dniu 26 czerwca 1935 wprowadzono w III Rzeszy zarządzenie o obowiązku sześciomiesięcznej pracy na rzecz państwa, a obowiązek miał być wypełniony poprzez pracę w Reichsarbeitsdienst. Zarządzeniu temu podlegali mężczyźni w wieku od 18 do 25 lat, a od 4 września 1939 także kobiety.<br><br>
+Wprowadzenie obowiązku pracy spowodowało gwałtowny rozwój organizacji, której struktury w szybkim czasie powstały we wszystkich landach III Rzeszy, a organizacja przybrała charakter organizacji masowej. Zaczęto też wydawać oficjalny organ prasowy organizacji Der Arbeitsmann. Organizacja wykonywała pracę na rzecz państwa w różnych dziedzinach życia gospodarczego wyznaczanych przez Ministerstwo Pracy.<br><br>
+Po wybuchu II wojny światowej głównym zadaniem Reichsarbeitsdienst stało się wykonywanie prac na rzecz Wehrmachtu, wtedy też RAD zaczęto traktować jako formację pomocniczą Wehrmachtu. Wykonywała ona szereg pracy na rzecz Wehrmachtu, a zwłaszcza zajmowała się budową umocnień. Dziełem tej organizacji był m.in. system umocnień Wału Atlantyckiego i Linii Zygfryda. Oddziały RAD wykorzystywane w pracach na froncie wschodnim, gdzie niektóre oddziały wzięły udział w walkach z Armią Czerwoną.<br><br>
+W 1944 część oddziałów RAD zaczęto wykorzystywać do obsługi baterii przeciwlotniczych. W 1944 do RAD zaczęto wcielać coraz młodszych mężczyzn w wieku od 15 lat i używano ich do budowy okopów i umocnień. Zaczęto ich również włączać do Volkssturmu.
+<br><br>
+Obozy takie były zlokalizowane w różnych miejscach III Rzeszy, najczęściej na obrzeżach miast. Obóz w Kamienicy był pokaźnym założeniem, składającym się głównie w drewnianych baraków, co widać na poniższcyh fotografiach (na mapce, którą widzisz wśród zdjęć, obóz oznaczono literami RAD). Do dziś z obozu nie pozostało niemal nic. W lesie, w pobliżu niebieskiego szlaku, można jeszcze z dużym trudem dostrzec ślady dawnych zabudowań obozowych.
+<br><a href="https://maps.app.goo.gl/u7jLr4nDArC8dZPN6" target="_blank">
+Dokładna lokalizacja dawnego obozu.</a> W poniższej galerii widzisz ujęcie resztek po obozie na wycinku z ortofotomapy z 1953 r. (na górze kadru pierwszego zdjęcia).
+
+<div class="gallery-modular" id="gallery3">
+<img src="https://raw.githubusercontent.com/margom23/kamienica/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-06-29%20234027.png" class="thumb-img">
+
+
+  <img src="https://polska-org.pl/foto/3894/Oboz_Sluzby_Pracy_Rzeszy_nr_4_114_Kamienica_dawny_Kamienica_3894086.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/3823/Oboz_Sluzby_Pracy_Rzeszy_nr_4_114_Kamienica_dawny_Kamienica_3823569.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/3898/Oboz_Sluzby_Pracy_Rzeszy_nr_4_114_Kamienica_dawny_Kamienica_3898435.jpg" class="thumb-img">
+<img src="https://raw.githubusercontent.com/margom23/kamienica/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-06-29%20153123.png" class="thumb-img">
+<img src="https://polska-org.pl/foto/7604/Oboz_Sluzby_Pracy_Rzeszy_nr_4_114_Kamienica_dawny_Kamienica_7604946.jpg" class="thumb-img">
+
+
+
+
+</div>
+
+<div class="lightbox-modular" id="lightbox3">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery3');
+  const lightbox = document.getElementById('lightbox3');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+    </div>
+
+
+
+
+
+    <div id="snieznik" class="content">
+
+
+<div style="border:10px solid #c62828; padding:15px 20px; border-radius:6px; margin:15px 0;">
+<p style="margin:0;">
+<strong> Moja propozycja trasy z Kamienicy na Śnieżnik przedstawia się następująco:</strong><br>
+Za górami za lasami → żółtym szlakiem na południe w kierunku granicy → Siodło Martena → na zachód zielonym szlakiem wzdłuż granicy PL-CZ → ruiny Schroniska księcia Liechtensteina → Śnieżnik → Hala pod Śnieżnikiem → niebieskim szlakiem powrót do Kamienicy (via ruiny Domku Narciarskiego). 
+</p>
+</div>
+
+
+<div style="text-align:center; margin:20px 0;">
+  <a href="https://mapa-turystyczna.pl/route/1w23k" target="_blank">
+    <img src="https://raw.githubusercontent.com/margom23/kamienica/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-06-29%20144726.png"
+         alt="Mapa trasy"
+         style="width:25%; max-width:150px; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.25); cursor:pointer; transition: transform 0.3s;">
+  </a>
+</div>
+
+<style>
+a img:hover {
+  transform: scale(1.05);
+}
+@media(max-width:600px){
+  a img { width:45%; max-width:120px; }
+}
+</style>
+
+
+
+
+
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+
+   <h2>Czeka Was ponad dziewiętnastokilometrowa wyprawa na najwyższy szczyt tej cześci Sudetów. Zaczynamy od ośrodka Za górami za lasami i kierujemy się na południe żołtym szlakiem (w tym miejscu przez chwilę biegnącym razem ze szklakiem niebieskim).</h2>
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+Nieco powyżej miejsca startu znajduje się tzw. Krzyż na skale, czyli metalowy krzyż postawiony przez mieszkańców Kamienicy w 2018 r. na zachodnim zboczu Zawady. Zabezpieczony drewniana barierką i instalacją odgromową. Ok. 200 m poniżej przy drodze leśnej znajduje się drewniana kapliczka i krzyż. Powyżej krzyża biegnie dawna droga prowadząca do przysiółka Jóźwin (wcz. Josefsfeld), dawnej kolonii Kamienicy (patrz mapka poniżej). Wg spisu z 1941 r. kolonia składa się z czterech zabudowań, mieszkało tam 36 osób. Po 1945 r. powoli następowało wyludnienie, później obszar osady zostal zalesiony.
+
+
+<div class="gallery-modular" id="gallery4">
+
+  <img src="https://polska-org.pl/foto/8118/Krzyz_na_Skale_Kamienica_8118425.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/8118/Krzyz_na_Skale_Kamienica_8118431.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/5748/Jozwin_ad_Boleslawow_zniesiony_Boleslawow_5748166.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/5753/Ruiny_domu_nr_2_Boleslawow_5753589.jpg" class="thumb-img">
+</div>
+
+<div class="lightbox-modular" id="lightbox4">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery4');
+  const lightbox = document.getElementById('lightbox4');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+
+Kierując się na południe po lewej stronie mijacie <a href="https://polska-org.pl/foto/344/Lesnictwo_Kamienica_Kamienica_344889.jpg" target="_blank">zabudowania leśnictwa z początku XX w.</a> Przed wojną też mieściła się tu leśniczówka. <br><br>
+
+Tuż za leśnictwem, również po lewej stronie drogi, mały zbiornik retencyjny na potoku Kamienica o romantycznej nazwie Leśne zwierciadło.
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+
+<br> Minąwszy wiatę turystyczną opuszczamy wieś i wkraczamy do lasu. Idziemy wzdłuż Kamienicy aż docieramy do Głębokiej Jamy, inaczej zwanej Siodłem Martena na granicy polsko-czeskiej, na wysokości ok. 950 m n.p.m. To głęboka dolina erozyjna wcinająca się we wschodnie zbocze Śnieżnika, między granicznym Stokiem a Piernikarską Kopą. Stanowi ostoję kozicy górskiej i salamandry plamistej. <br>Tak, tak, to nie pomyłka - kozicy górskiej. W Masywie Śnieżnika żyje unikalna populacja kozic (około 25 osobników). To jedyne miejsce w Polsce poza Tatrami, gdzie można spotkać te zwinne zwierzęta. Są one potomkami alpejskich kozic sprowadzonych przed II wojną światową w czeskie Jesioniki, skąd w latach 70. XX wieku przywędrowały w rejon Śnieżnika.
+
+<br><br>
+
+W tym miejscu opuszczamy żółty szlak i skręcamy w prawo, w szlak zielony biegnący początkowo granicą państwową. 
+
+<br><div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+<br>
+Wędrując wzdłuż granicy mijamy Graniczny Stok. To zbudowana z gnejsów część głównego grzbietu Masywu Śnieżnika o wys. ok. 950 - 1150 m n.p.m. Stanowi świetny punkt widokowy, z którego rozciąga się piękny widok na Wysoki Jesionik. Przy dobrej pogodzie można stąd dostrzec <a href="https://www.ok-tourism.cz/data/images/fotografie/b6/dji_0955.jpg" target="_blank">wieżę telewizyjną na Pradziadzie.</a><br>
+Na poniższym zdjęciu z lat 30. XX w., prezentującym piękna panoramę Kamienicy z widokiem na Masyw Śnieżnika, na zielono zaznaczyłem Graniczny Stok. Po prawej Śnieżnik (z ówczesną wieżą widokową) - to nasz dzisiejszy cel.
+
+
+
+<div class="gallery-modular" id="gallery5">
+
+  <img src="https://raw.githubusercontent.com/margom23/kamienica/refs/heads/main/zdjecia/Panoramy_i_widoki_Kamienicy_Kamienica_5845463.jpg" class="thumb-img"></div>
+
+<div class="lightbox-modular" id="lightbox5">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery5');
+  const lightbox = document.getElementById('lightbox5');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+
+
+<br>
+
+Mijamy po lewej czeski szczyt Stříbrnická (1250 m n.p.m.) i docieramy do Przełęczy Stříbrnickiej, którą doskonale widać na zdjęciu powyżej (delikatne zagłębienie na prawo od oznaczonego na zielono Granicznego Stoku). Chwilę póżniej wspinamy się tuż pod szczytem Sadzonek (1230 m n.p.m.) aż docieramy do Chaty Franciska (1220 m n.p.m.). To dawny domek myśliwski, obecnie chata/schron Horskiej Służby. Nazwa na rozgałęzieniu szlaków to Franciska, ale funkcjonują też inne nazwy: Františka lub Františkova chata. W tym miejscu następuje też połączenie szlaków - od tego momentu zielony, żółty i czerwony biegną razem.
+
+
+<div class="gallery-modular" id="gallery6">
+
+  <img src="https://polska-org.pl/foto/3781/Chata_Franciska_Frantiskova_chata_CZ_3781774.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/5546/Chata_Franciska_Frantiskova_chata_CZ_5546772.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/5704/Chata_Franciska_Frantiskova_chata_CZ_5704917.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/5741/Chata_Franciska_Frantiskova_chata_CZ_5741869.jpg" class="thumb-img">
+</div>
+
+<div class="lightbox-modular" id="lightbox6">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery6');
+  const lightbox = document.getElementById('lightbox6');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+
+Zbliżamy się coraz bardziej do szczytu Śnieżnika. Po prawej stronie mijamy symboliczny grób Josefa Tejkla. To czeski pisarz i dramaturg a także popularyzator turystyki górskiej i wspinaczki. Zmarł dokładnie w tym miejscu w 2009 r. w wieku 56 lat. Jego właściwy grób znajduje się w Hradcu Kralovem.
+
+
+<br>
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+
+
+<br>
+
+Trasa skręca w prawo i pnie się mocno pod górę. Po prawej stronie czerwony szlak odbija delikatnie do ruin potężnego niegdyś Schroniska księcia Liechtensteina (Fürst Johann Liechtenstein Schutzhaus, Liechtensteinschutzhaus, Liechtensteinova bouda, Lichtenštejnova chata na Sněžníku). To ten obiekt widzieliśmy na zdjęciu z ortofotomapy z 1953 r. w zakładce Informacje ogólne.
+<br>
+
+<br>
+To nieistniejące obecnie schronisko, znajdujące się w przeszłości po czeskiej stronie Śnieżnika, nieco poniżej szczytu. Istniało w latach 1912-1971. <br>
+<br>
+Obiekt był jednym z najbardziej imponujących schronisk górskich w całych Sudetach. Wzniesiony w latach 1909–1912 na wysokości 1375 m n.p.m., tuż pod szczytem Śnieżnika, górował nad okolicą jako potężny, drewniany budynek o wymiarach 22 × 12 metrów i wysokości aż 15 metrów. Mógł jednocześnie pomieścić 60–70 osób, oferując jadalnię, liczne pokoje gościnne oraz duże wspólne dormitorium. Dzięki całorocznej działalności stał się ważnym centrum turystyki i narciarstwa w regionie.<br><br>
+
+Powstał dzięki staraniom Morawsko-Śląskiego Stowarzyszenia Sudetów na gruncie przekazanym przez ród Liechtensteinów. W okresie międzywojennym, pod kierownictwem słynnego alpinisty i pioniera narciarstwa dr. Oskara Gutwinskiego oraz jego żony Adéli, schronisko przeżywało swój złoty okres, funkcjonując jako wysokiej klasy hotel górski.<br><br>
+
+Po II wojnie światowej obiekt znalazł się po stronie czechosłowackiej i mimo dalszego użytkowania stopniowo popadał w ruinę. W 1971 roku został rozebrany z powodu bardzo złego stanu technicznego, a dwa lata później zniknęła także stojąca na szczycie Śnieżnika kamienna wieża widokowa (o czym za chwilę). Przez kolejne pół wieku pod szczytem zalegało około 400 ton gruzu, usuniętego dopiero w 2021 roku w kosztownej akcji z udziałem śmigłowców.<br><br>
+
+Dziś po tym monumentalnym schronisku pozostały jedynie fundamenty oraz słynna figurka słonia, która pierwotnie znajdowała się we wnętrzu budynku. Trudno nie odczuwać żalu, że tak okazały i ważny dla historii turystyki obiekt nie przetrwał do naszych czasów. Gdyby nadal istniał, byłby bez wątpienia jedną z największych atrakcji całego masywu Śnieżnika i jednym z najbardziej charakterystycznych schronisk górskich Europy Środkowej.<br>
+
+
+
+<div class="gallery-modular" id="gallery7">
+
+  <img src="https://polska-org.pl/foto/9679/Schronisko_ksiecia_Liechtensteina_dawne_CZ_9679141.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/421/Wieza_widokowa_dawna_421060.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6139/Schronisko_ksiecia_Liechtensteina_dawne_CZ_6139675.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/5644/Schronisko_ksiecia_Liechtensteina_dawne_CZ_5644867.jpg" class="thumb-img">
+
+<img src="https://polska-org.pl/foto/6846/Snieznik_1423_m_6846868.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6591/Schronisko_ksiecia_Liechtensteina_dawne_CZ_6591696.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/12390/Schronisko_ksiecia_Liechtensteina_dawne_CZ_12390581.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6591/Schronisko_ksiecia_Liechtensteina_dawne_CZ_6591722.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6591/Schronisko_ksiecia_Liechtensteina_dawne_CZ_6591732.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6958/Schronisko_ksiecia_Liechtensteina_dawne_CZ_6958153.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/7785/Schronisko_ksiecia_Liechtensteina_dawne_CZ_7785533.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/7785/Schronisko_ksiecia_Liechtensteina_dawne_CZ_7785536.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/5242/Schronisko_ksiecia_Liechtensteina_dawne_CZ_5242443.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6540/Schronisko_ksiecia_Liechtensteina_dawne_CZ_6540981.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6139/Schronisko_ksiecia_Liechtensteina_dawne_CZ_6139681.jpg" class="thumb-img">
+
+
+<img src="https://polska-org.pl/foto/6360/Schronisko_ksiecia_Liechtensteina_dawne_CZ_6360151.jpg" class="thumb-img">
+</div>
+
+<div class="lightbox-modular" id="lightbox7">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery7');
+  const lightbox = document.getElementById('lightbox7');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+<br><br>
+Poniżej kilka zdjęc sprzed rozbiórki schroniska oraz wykonane niemal dokładnie w momencie jego upadku. Dziś ruiny po schronisku są ogrodzone i ładnie wyeksponowane. Stoją tablice informacyjne, jest też figurka słonia, która jest jedyną ocalałą pamiątką po schronisku.
+
+
+
+<div class="gallery-modular" id="gallery8">
+
+  <img src="https://polska-org.pl/foto/5571/Schronisko_ksiecia_Liechtensteina_dawne_CZ_5571405.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/5555/Schronisko_ksiecia_Liechtensteina_dawne_CZ_5555424.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/5555/Schronisko_ksiecia_Liechtensteina_dawne_CZ_5555442.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/5555/Schronisko_ksiecia_Liechtensteina_dawne_CZ_5555464.jpg" class="thumb-img">
+
+<img src="https://polska-org.pl/foto/5555/Schronisko_ksiecia_Liechtensteina_dawne_CZ_5555480.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/5555/Schronisko_ksiecia_Liechtensteina_dawne_CZ_5555490.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6164/Schronisko_ksiecia_Liechtensteina_dawne_CZ_6164875.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/9913/Schronisko_ksiecia_Liechtensteina_dawne_CZ_9913604.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox8">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery8');
+  const lightbox = document.getElementById('lightbox8');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+<br>
+
+Wprawne oko zauważy, że z tej wysokości można już dostrzec wyłaniającą się zza góry wieżę widokową po czeskiej stronie - tzw. Ścieżkę w obłokach.
+
+<br><br>
+Jesteśmy już prawie u celu. Wspinamy się dalej, mijamy źródło rzeki Morawy - bardzo ważnej drogi wodnej Czech, Słowacji i Austrii. Morawa kończy bieg wpadając do Dunaju w Bratysławie. Znajdujecie się więc aktualnie na terenie zlewni Morza Czarnego.
+
+
+<br>
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+
+<h3>Śnieżnik</h3>
+Docieramy na szczyt. 
+<br>
+Śnieżnik to najwyższy szczyt Masywu Śnieżnika i najwyższa góra po polskiej stronie Sudetów Wschodnich. Leży na granicy polsko-czeskiej i jest jednym z najbardziej rozpoznawalnych szczytów Sudetów. Należy do Korony Gór Polski oraz Korony Gór Dolnego Śląska.
+<br><br>
+Jest jedyną górą w całym masywie, która wznosi się ponad górną granicę lasu, dzięki czemu oferuje wyjątkowo rozległe panoramy.
+Na szczycie spotykają się zlewiska dwóch mórz – potoki po stronie polskiej płyną do Bałtyku, a po czeskiej do Morza Czarnego.
+Przy dobrej widoczności można stąd dostrzec wiele pasm Sudetów, a w wyjątkowych warunkach nawet szczyty austriackich Alp oddalone o niemal 300 km, co jest jednym z polskich rekordów dalekich obserwacji.
+<br><br>
+
+Turystyka na Śnieżniku rozwija się od XIX wieku. Duży wpływ miała na to Marianna Orańska, która po przejęciu okolicznych dóbr uczyniła górę modnym celem wycieczek.
+<br>
+W 1871 roku powstało Schronisko PTTK Na Śnieżniku, działające do dziś i będące jednym z najstarszych schronisk w Sudetach - za chwilę do niego przejdziemy.
+<br>
+Pod koniec XIX wieku na szczycie stanęła imponująca kamienna wieża widokowa o wysokości 33,5 m i sześciu kondygnacjach. Była jedną z największych atrakcji regionu, jednak została wysadzona w 1973 roku.
+<br>
+W 2022 roku na szczycie otwarto nową wieżę widokową, która nawiązuje do tradycji dawnej wieży i ponownie pozwala podziwiać panoramę Sudetów z wysokości.
+<br>O obu wieżach więcej za chwilę.
+<br><br>
+Śnieżnik słynie z wyjątkowo bogatej przyrody. Występują tu rzadkie gatunki roślin i zwierząt, m.in. salamandra plamista i kozica góska - o których pisałem wcześniej, a także cietrzew czy głuszec. Najcenniejsze są wysokogórskie łąki otaczające szczyt. 
+
+
+
+<div class="gallery-modular" id="gallery13">
+
+  <img src="https://polska-org.pl/foto/4057/Panoramy_i_widoki_Ladka_Zdroju_Ladek_Zdroj_4057742.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/11318/Panoramy_i_widoki_Kletna_Kletno_11318051.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6770/Snieznik_1423_m_6770482.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/211/Schronisko_Na_Sniezniku_im_Zbigniewa_Fastnachta_ul_Sniezna_Miedzygorze_211223.jpg" class="thumb-img">
+
+<img src="https://polska-org.pl/foto/177/Snieznik_1423_m_177122.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/3379/Panoramy_i_widoki_Boleslawowa_Boleslawow_3379248.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/7028/Snieznik_1423_m_7028401.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/359/Snieznik_1423_m_359531.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/403/Snieznik_1423_m_403670.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox13">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery13');
+  const lightbox = document.getElementById('lightbox13');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+<br>
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+<br>
+
+
+Zanim omówimy wieże widokowe, najpierw skupmy się na dwóch mniejszych obiektach szczytowych.<br>Po lewej stronie, tuż przed szczytem, znajduje się niewielki kamienny kurhan, w który wetknięto drewniany krzyż z metalową tabliczką, na której widnieje napis w języku czeskim: „Památce Petra Sedláka” (Pamięci Petra Sedláka). Był on ratownikiem czeskiego pogotowia górskiego, czyli Horskiej Służby. Miał zginąć na Masywie Śnieżnika niosąc pomoc turystom.
+
+
+<br><br>
+Drugi z obiektów to punkt trygonometryczny (PT), inaczej punkt triangulacyjny - oznacza wierzchołek trójkąta w sieci triangulacyjnej. Jest to punkt podstawowej osnowy geodezyjnej. Punkt taki ma wyznaczone współrzędne w układzie przestrzennym. Z takiego punktu powinna być zapewniona wizura na sąsiednie punkty sieci triangulacyjnej, więc dlatego jest to punkt o wyeksponowanej wysokości w okolicy. Ten konkretny punkt pochodzi z 1927 r. Poniższe zdjęcia prezentują obiekt w latach 1988 oraz 1994 - jeszcze z rumowiskiem po dawnej wieży widokowej.
+
+
+
+
+<div class="gallery-modular" id="gallery9">
+
+  <img src="https://polska-org.pl/foto/10420/Punkt_triangulacyjny_na_Sniezniku_10420589.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6313/Punkt_triangulacyjny_na_Sniezniku_6313300.jpg" class="thumb-img"></div>
+
+<div class="lightbox-modular" id="lightbox9">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery9');
+  const lightbox = document.getElementById('lightbox9');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+<h3>
+
+Dawna wieża widokowa im. cesarza Wilhelma I na Śnieżniku</b></h3>
+
+Przez blisko 75 lat szczyt Śnieżnika zdobiła jedna z najbardziej charakterystycznych budowli Sudetów – monumentalna kamienna wieża widokowa im. cesarza Wilhelma I. Wzniesiona w latach 1895–1899 z inicjatywy Kłodzkiego Towarzystwa Górskiego, była nie tylko doskonałym punktem obserwacyjnym, ale także symbolem całej Ziemi Kłodzkiej, widocznym z wielu kilometrów.<br><br>
+
+Budowla miała imponującą wysokość <b>33,55 metra</b> i składała się z dwóch połączonych cylindrycznych wież zwieńczonych blankami, nawiązujących stylem do średniowiecznych zamków. Na najwyższej platformie widokowej, położonej niemal 30 metrów nad szczytem góry, turyści mogli podziwiać rozległą panoramę Sudetów i okolicznych krain. Wewnątrz znajdowała się reprezentacyjna Hala Pamięci cesarza Wilhelma I z jego popiersiem, a obok wieży funkcjonowało schronisko, gospoda i sklep z pamiątkami.<br><br>
+
+Budowa była ogromnym przedsięwzięciem logistycznym. Kamień pozyskiwano bezpośrednio ze szczytu Śnieżnika, wodę transportowano ze źródeł Morawy, a większość prac prowadzono wyłącznie w krótkim sezonie letnim. Mimo trudnych warunków obiekt ukończono w 1899 roku i szybko stał się jedną z największych atrakcji turystycznych Sudetów. Już kilka lat po otwarciu odwiedzały go tysiące turystów rocznie.<br><br>
+
+Po II wojnie światowej wieża znalazła się w granicach Polski. Choć nadal przyciągała turystów, przez ponad dwadzieścia lat nie była odpowiednio konserwowana. W 1973 roku podjęto decyzję o jej wyburzeniu, tłumacząc ją złym stanem technicznym. 11 października 1973 roku wojskowi saperzy wysadzili wieżę w powietrze. Co znamienne, pierwsza próba okazała się nieskuteczna, a masywna konstrukcja runęła dopiero po użyciu podwójnych ładunków wybuchowych, co do dziś jest przywoływane jako dowód jej niezwykłej solidności.<br><br>
+
+Obecnie decyzja o zniszczeniu wieży jest powszechnie uznawana za jeden z największych błędów w historii turystyki regionu. Wielu historyków i miłośników Sudetów podkreśla, że obiekt można było wyremontować i zachować dla przyszłych pokoleń. Razem z rozebranym dwa lata wcześniej Schroniskiem Księcia Liechtensteina tworzył on wyjątkowy kompleks turystyczny na szczycie Śnieżnika.<br><br>
+
+Przez dziesięciolecia podejmowano liczne próby odbudowy wieży. Ostatecznie dopiero w 2022 roku na szczycie stanęła nowa wieża widokowa, jednak nie jest ona rekonstrukcją historycznej budowli. Co ciekawe, wierna replika dawnej wieży powstała po czeskiej stronie granicy jako 
+
+<a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZLRwQSAOAjMimFJYiWAwDg_d6--ZSuEczPYbfUYDIVgLLz9PYJSp9Glo&s=10
+" target="_blank"><b>Dalimilova rozhledna</b></a>, dzięki czemu można dziś zobaczyć, jak wyglądał jeden z najbardziej imponujących symboli dawnego Śnieżnika.
+
+
+
+<div class="gallery-modular" id="gallery10">
+
+  <img src="https://polska-org.pl/foto/6483/Schronisko_Na_Sniezniku_im_Zbigniewa_Fastnachta_ul_Sniezna_Miedzygorze_6483916.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/7874/Wieza_widokowa_dawna_7874092.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6770/Wieza_widokowa_dawna_6770477.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6606/Wieza_widokowa_dawna_6606243.jpg" class="thumb-img">
+
+<img src="https://polska-org.pl/foto/187/Wieza_widokowa_dawna_187961.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/332/Wieza_widokowa_dawna_332335.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/9051/Snieznik_1423_m_9051748.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/11285/Wieza_widokowa_dawna_11285088.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/10382/Wieza_widokowa_dawna_10382261.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox10">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery10');
+  const lightbox = document.getElementById('lightbox10');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+<br>
+
+Wnętrza dawnej wieży:
+
+
+<div class="gallery-modular" id="gallery11">
+
+  <img src="https://polska-org.pl/foto/4804/Wnetrza_wiezy_4804731.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/9196/Wnetrza_wiezy_9196022.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/6840/Wnetrza_wiezy_6840762.jpg" class="thumb-img">
+
+
+
+</div>
+
+<div class="lightbox-modular" id="lightbox11">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery11');
+  const lightbox = document.getElementById('lightbox11');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+
+
+
+
+
+
+<h3>
+
+Nowa wieża widokowa na Śnieżniku</b></h3>
+
+Po wysadzeniu historycznej Wieży Cesarza Wilhelma w 1973 roku szybko okazało się, że była to decyzja pochopna. Choć jako powód podawano zły stan techniczny, masywna kamienna konstrukcja stawiała ogromny opór materiałom wybuchowym, a po detonacji na szczycie przez wiele lat zalegały duże fragmenty murów. Coraz częściej podkreślano, że zamiast burzyć jeden z symboli Ziemi Kłodzkiej, należało go wyremontować i zachować dla przyszłych pokoleń.<br><br>
+
+Już w 1979 roku pojawiły się pierwsze pomysły odbudowy wieży. Przez kolejne dekady temat regularnie wracał, jednak długo pozostawał jedynie w sferze planów. Dopiero w 2012 roku Związek Gmin Śnieżnickich rozpoczął przygotowania do realizacji nowej inwestycji. Opracowano dokumentację, uzyskano wszystkie wymagane zgody środowiskowe i budowlane oraz wybrano projekt, który miał przywrócić szczytowi charakterystyczny punkt widokowy.<br><br>
+
+Nowa wieża została zaprojektowana jako nowoczesna interpretacja dawnej budowli. Konstrukcja ma <b>34,16 metra wysokości</b>, czyli jest nieco wyższa od historycznej wieży z XIX wieku. Taras widokowy znajduje się na wysokości niemal 30 metrów ponad szczytem góry, dzięki czemu ponownie można podziwiać rozległe panoramy Sudetów, Kotliny Kłodzkiej oraz czeskich pasm górskich.<br><br>
+
+Obiekt łączy nowoczesne rozwiązania techniczne z nawiązaniami do dawnej architektury Śnieżnika. Dolna część została obłożona kamieniem, częściowo wykorzystując materiał pozyskany z pozostałości starej wieży. Wyżej konstrukcja przechodzi w stalowo-szklaną formę, której przeszklenia chronią turystów przed silnym wiatrem i śniegiem, charakterystycznymi dla najwyższych partii masywu.<br><br>
+
+Wieża została wyposażona w autonomiczny system zasilania oparty na energii słonecznej. Oświetlenie zapewniają panele fotowoltaiczne oraz zestaw akumulatorów, dzięki czemu obiekt może funkcjonować bez podłączenia do sieci energetycznej. Całość zaprojektowano z myślą o trudnych warunkach panujących na szczycie oraz minimalnym wpływie na otaczającą przyrodę.<br><br>
+
+Uroczyste otwarcie nowej wieży odbyło się <b>26 września 2022 roku</b>. Tego samego dnia została udostępniona turystom, kończąc trwający niemal pół wieku okres, podczas którego najwyższy szczyt Masywu Śnieżnika pozostawał bez charakterystycznego punktu widokowego. Dziś nowa wieża jest jedną z największych atrakcji regionu i symbolem powrotu do tradycji turystycznych Śnieżnika. Budżet inwestycji zamknął się kwotą 13,5 mln zł
+
+
+
+<div class="gallery-modular" id="gallery12">
+
+  <img src="https://polska-org.pl/foto/9473/2020_2022_Budowa_wiezy_widokowej_9473118.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/9473/2020_2022_Budowa_wiezy_widokowej_9473101.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/10534/Wieza_widokowa_na_Sniezniku_nowa_Wieza_Solidarnosci_Polsko_Czeskiej_10534717.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/10376/Wieza_widokowa_na_Sniezniku_nowa_Wieza_Solidarnosci_Polsko_Czeskiej_10376474.jpg" class="thumb-img">
+
+<img src="https://polska-org.pl/foto/10096/Widoki_z_wiezy_10096805.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/10534/Widoki_z_wiezy_10534684.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/10538/Widoki_z_wiezy_10538185.jpg" class="thumb-img"></div>
+
+<div class="lightbox-modular" id="lightbox12">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery12');
+  const lightbox = document.getElementById('lightbox12');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+<h3>Schronisko Na Śnieżniku</h3>
+Schodzimy ze szczytu zielonym szlakiem kierując się na zachód. Przy skupisku skalnym Jaskółcze Skały skręcamy w prawo, w kierunku Hali pod Śnieżnikiem.
+<br>
+
+
+<br>
+
+
+Najważniejszym obiektem na Hali jest Schronisko Na Śnieżniku im. Zbigniewa Fastnachta (wcześniej Schweizerei am Glatzer Schneeberg, Staatliche Schweizerei Glatzer Schneeberg, Schronisko PTTK Pod Śnieżnikiem Kłodzkim)
+
+
+<br>
+Położone na wysokości <b>1218 m n.p.m.</b> na rozległej Hali pod Śnieżnikiem, schronisko „Na Śnieżniku” jest jednym z najbardziej klimatycznych i najstarszych schronisk górskich w Polsce. Usytuowane u podnóża najwyższego szczytu Masywu Śnieżnika, od ponad 150 lat stanowi ważny punkt dla turystów odwiedzających tę część Sudetów. Z hali obok schroniska rozciąga się rozległa panorama na dolinę Nysy Kłodzkiej i otaczające pasma górskie.<br><br>
+
+Historia tego miejsca sięga początku XIX wieku, kiedy na hali funkcjonowały pasterskie szałasy i zabudowania gospodarcze. Prawdziwy rozwój nastąpił jednak po przejęciu okolicznych dóbr przez <b>królewnę Mariannę Orańską</b>, jedną z najwybitniejszych postaci w historii Ziemi Kłodzkiej. To właśnie z jej inicjatywy powstała charakterystyczna „szwajcarka” – drewniany budynek wzorowany na alpejskich gospodach, który do dziś stanowi główną część schroniska.<br><br>
+
+Obiekt został oddany do użytku w <b>1871 roku</b> i od początku pełnił funkcję gospody turystycznej. Oferował około 50 miejsc noclegowych oraz przestronną salę jadalną, stając się jednym z najważniejszych punktów na turystycznej mapie Sudetów. W kolejnych latach schronisko rozbudowywano i modernizowano, a jego popularność rosła wraz z rozwojem turystyki na Śnieżniku.<br><br>
+
+Po II wojnie światowej budynek był przez pewien czas opuszczony i zdewastowany. W 1948 roku ponownie uruchomiono schronisko pod nazwą <b>„Na Śnieżniku”</b>, a wkrótce potem zostało ono przejęte przez PTTK. Dzięki temu mogło dalej służyć kolejnym pokoleniom miłośników gór.<br><br>
+
+Szczególną rolę w historii schroniska odegrał <b>Zbigniew Fastnacht</b>, który od 1982 roku prowadził obiekt i doprowadził do jego gruntownego remontu oraz modernizacji. Dzięki jego zaangażowaniu schronisko przetrwało trudny okres i zachowało swój wyjątkowy charakter. Po jego śmierci w 2001 roku schronisku nadano jego imię, a tradycję prowadzenia obiektu kontynuuje rodzina Fastnachtów.<br><br>
+
+Przez wiele lat schronisko słynęło z niezwykłej atmosfery i niemal całkowitego odcięcia od cywilizacji. Jeszcze na początku XXI wieku nie było tu stałego przyłącza energetycznego. Prąd wytwarzały niewielkie wiatraki ustawione na stoku ponad budynkiem, a słabe światło żarówek dodawało miejscu niepowtarzalnego klimatu. Dziś schronisko korzysta z własnej elektrowni wodnej, jednak nadal zachowuje charakter górskiego schronienia z dala od miejskiego zgiełku.<br><br>
+
+Obecnie Schronisko PTTK „Na Śnieżniku” pozostaje jednym z najważniejszych symboli Masywu Śnieżnika i ostatnim historycznym schroniskiem w bezpośrednim sąsiedztwie szczytu. Pamięta czasy Marianny Orańskiej, dawnych górskich pionierów oraz okres, gdy obok niego wznosiła się monumentalna wieża Cesarza Wilhelma i działało słynne Schronisko Księcia Liechtensteina. Dzięki temu jest nie tylko miejscem odpoczynku dla turystów, ale również żywym świadkiem bogatej historii Śnieżnika.
+
+
+
+
+
+<div class="gallery-modular" id="gallery15">
+
+  <img src="https://polska-org.pl/foto/10587/Schronisko_Na_Sniezniku_im_Zbigniewa_Fastnachta_ul_Sniezna_Miedzygorze_10587094.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/3804/Schronisko_Na_Sniezniku_im_Zbigniewa_Fastnachta_ul_Sniezna_Miedzygorze_3804523.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/8196/Schronisko_Na_Sniezniku_im_Zbigniewa_Fastnachta_ul_Sniezna_Miedzygorze_8196041.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/4119/Schronisko_Na_Sniezniku_im_Zbigniewa_Fastnachta_ul_Sniezna_Miedzygorze_4119958.jpg" class="thumb-img">
+ <img src="https://polska-org.pl/foto/4602/Schronisko_Na_Sniezniku_im_Zbigniewa_Fastnachta_ul_Sniezna_Miedzygorze_4602471.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/4602/Schronisko_Na_Sniezniku_im_Zbigniewa_Fastnachta_ul_Sniezna_Miedzygorze_4602471.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/64/Snieznik_1423_m_64671.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/8432/Schronisko_Na_Sniezniku_im_Zbigniewa_Fastnachta_ul_Sniezna_Miedzygorze_8432237.jpg" class="thumb-img">
+ <img src="https://polska-org.pl/foto/4298/Snieznik_1423_m_4298539.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/8293/Schronisko_Na_Sniezniku_im_Zbigniewa_Fastnachta_ul_Sniezna_Miedzygorze_8293990.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/362/Schronisko_Na_Sniezniku_im_Zbigniewa_Fastnachta_ul_Sniezna_Miedzygorze_362034.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/4819/Zimowe_widoki_schroniska_Na_Sniezniku_Miedzygorze_4819894.jpg" class="thumb-img">
+
+<img src="https://polska-org.pl/foto/6484/Zimowe_widoki_schroniska_Na_Sniezniku_Miedzygorze_6484466.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox15">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery15');
+  const lightbox = document.getElementById('lightbox15');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+<br>
+
+
+Wnętrza schroniska: 
+
+
+<div class="gallery-modular" id="gallery16">
+
+  <img src="https://polska-org.pl/foto/4687/Sala_bufetowa_i_weranda_Miedzygorze_4687940.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/110/Sala_bufetowa_i_weranda_Miedzygorze_110495.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/5386/Sala_bufetowa_i_weranda_Miedzygorze_5386034.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/4126/Sala_bufetowa_i_weranda_Miedzygorze_4126926.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/4126/Sala_bufetowa_i_weranda_Miedzygorze_4126927.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox16">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery16');
+  const lightbox = document.getElementById('lightbox16');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+
+
+<br>
+
+Schodzimy z Hali pod Śnieżnikiem niebieskim szlakiem. Po krókiej chwili docieramy do rozdroża na Przełęczy Śnieżnickiej na 1123 m n.p.m. 
+Widzimy tam charakterystyczny obelisk - Kapliczkę Czterech Patronów. Kapliczka z piaskowca czterofrontowa na rzucie kwadratu. Rzeźby przedstawiają: św. Franciszka, św, Gwalberta, św. Eustachego i św. Huberta. Postawiona w sierpniu 2015 r. przez leśników z okazji 70-lecia Lasów Państwowych. Uroczyste poświęcenie odbyło się 5 września 2015 r. w obecności licznych gości i biskupa Deca. Autorką rzeźby jest Ewa Beyer-Formela.
+
+
+<br>
+
+<br>
+Tuż za rozdrożem, po lewej stronie drogi, naprzeciw niebieskiej tablicy mówiącej o ujęciu wody, znajdował się tzw. Domek narciarski (Skihof) - małe schronisko, albo górski schron dla narciarzy. Miał bardzo krótki żywot, ponieważ został wybudowany tuż przed wojną, a spłonął już w 1945 r. W internecie bardzo mało jest informacji na temat tego obiektu. Wiadomo, że wybuch wojny spowodował, że przebywała w nim głównie młodzież z Hitlerjungend oraz żołnierze Wehrmachtu, którzy odbywali tu kursy narciarskie. Ruiny wskazują, że w tym miejscu istniały trzy budynki. Do dziś zachowały się niezabezpieczone studzienki i podmurówki obiektów.
+
+
+
+
+<div class="gallery-modular" id="gallery17">
+
+  <img src="https://raw.githubusercontent.com/margom23/kamienica/refs/heads/main/zdjecia/Zrzut%20ekranu%202026-06-29%20225952.png" class="thumb-img">
+<img src="https://polska-org.pl/foto/5761/Domek_narciarski_dawny_5761536.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/5766/Domek_narciarski_dawny_5766488.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox17">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery17');
+  const lightbox = document.getElementById('lightbox17');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+
+Od tego momentu wędrujemy niebieskim szlakiem w kierunku Kamienicy. Szlak wiedzie cały czas przez las, w pewnym momencie prowadzi przez tzw. Drogę nad Lejami. 
+Przechodząc <a href="https://maps.app.goo.gl/8qXNVrnFLcB5tTBs8" target="_blank">w tym miejscu</a> pamiętajcie o obozie Służby Pracy, który mieścił się bardzo niedaleko na północ od miejsca, w którym stoicie. Czytaliście o nim w zakładce Kamienica.
+
+
+
+
+</p>
+    </div>
+
+
+    <div id="long" class="content">
+        <h2>Dolní Morava - Stezka v oblacích i Sky Bridge</h2>
+
+
+
+<b>Dojazd i parking</b><br><br>
+
+Po przyjeździe do Dolní Moravy należy kierować się do głównego kompleksu turystycznego przy dolnej stacji wyciągu. Na miejscu znajduje się kilka dużych parkingów oznaczonych jako P1, P2 i P3. W sezonie letnim oraz podczas długich weekendów warto przyjechać wcześnie rano, ponieważ liczba odwiedzających jest bardzo duża.<br><br>
+
+Parkingi są płatne, a opłata zależy od sezonu i czasu postoju. Bilety parkingowe można kupić w automatach lub online.<br><br>
+
+
+
+Istnieją dwie możliwości dotarcia na górę:<br><br>
+
+<b>1. Koleją linową</b><br>
+Najpopularniejszy wariant. Z dolnej stacji można wjechać nowoczesną kolejką linową na grzbiet Slamník. Przejazd trwa kilka minut i pozwala zaoszczędzić sporo sił. Po wyjściu z kolejki do Ścieżki w Obłokach prowadzi wygodna droga spacerowa, a dojście zajmuje około 10 minut.<br><br>
+
+<b>2. Pieszo</b><br>
+Dla osób lubiących aktywny wypoczynek przygotowano kilka tras prowadzących od parkingów na szczyt. Podejście zajmuje zwykle od 60 do 90 minut, w zależności od wybranej trasy i kondycji. Szlaki są dobrze oznakowane i prowadzą przez las oraz stoki narciarskie.<br><br>
+
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+<b>Ścieżka w Obłokach</b><br><br>
+
+Ścieżka w Obłokach została otwarta w 2015 roku i szybko stała się symbolem Dolní Moravy. Charakterystyczna drewniano-stalowa konstrukcja wznosi się na wysokość około 55 metrów ponad stok góry. Na szczyt prowadzi łagodna, spiralna ścieżka.<br><br>
+
+Ze szczytu rozciąga się spektakularna panorama Masywu Śnieżnika, Jesioników, Gór Orlickich oraz Kotliny Kłodzkiej. Dodatkową atrakcją jest siatka zawieszona nad przepaścią oraz długa zjeżdżalnia prowadząca na dół konstrukcji.<br><br>
+
+
+• Na potrzeby budowli zużyto 380 ton stali, 300 m3 modrzewiowego klejonego drewna oraz aż 250 m3 heblowanych pełnych modrzewiowych bali. Drewno pochodziło z austriackich Alp z wysokości ponad 1000 m n.p.m.<br>
+• Konstrukcja jest osadzona na fundamentach i mikropalach zakotwiczonych aż 6,5 m w skale.<br>
+• Wieża została przystosowana by przetrwać wichury nawet do 200 km/h.<br>
+• Przy dobrych warunkach pogodowych na wieży może znajdować się równocześnie do 4000 osób.<br>
+• Kładka zawieszona jest na konstrukcji stalowej o łącznej długości 600 m.<br>
+
+
+<div class="gallery-modular" id="gallery18">
+
+  <img src="https://polska-org.pl/foto/7423/Stezka_v_oblacich_CZ_7423823.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/7526/Stezka_v_oblacich_CZ_7526519.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/7525/Stezka_v_oblacich_CZ_7525898.jpg" class="thumb-img">
+
+</div>
+
+<div class="lightbox-modular" id="lightbox18">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery18');
+  const lightbox = document.getElementById('lightbox18');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+<b>Sky Bridge 721</b><br><br>
+
+Otwarte w 2022 roku przejście Sky Bridge 721 jest największą atrakcją kompleksu. Most ma długość <b>721 metrów</b> i zawieszony jest nawet <b>95 metrów nad ziemią</b>. To najdłuższy wiszący most dla pieszych na świecie. Łączy dwa grzbiety górskie - Slamnik i Chlum - ponad głęboką doliną Mlynskiego Potoku i oferuje niezapomniane widoki na okoliczne szczyty.<br><br>
+
+Przejście przez most odbywa się tylko w jednym kierunku. Po jego przekroczeniu turyści wracają specjalnie przygotowaną trasą edukacyjną prowadzącą przez las i punkt widokowy. Cała pętla zajmuje zwykle od 45 do 90 minut.<br><br>
+
+
+
+
+<div class="gallery-modular" id="gallery19">
+
+  <img src="https://polska-org.pl/foto/9865/Sky_Bridge_721_9865525.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/9865/Sky_Bridge_721_9865529.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/9865/Sky_Bridge_721_9865664.jpg" class="thumb-img">
+<img src="https://polska-org.pl/foto/10408/Sky_Bridge_721_10408844.jpg" class="thumb-img">
+
+
+</div>
+
+<div class="lightbox-modular" id="lightbox19">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery19');
+  const lightbox = document.getElementById('lightbox19');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+<b>Ceny biletów</b><br><br>
+
+Dostępne są różne warianty biletów:<br>
+• sam wjazd kolejką linową,<br>
+• kolejka + Ścieżka w Obłokach,<br>
+• kolejka + Sky Bridge 721,<br>
+• bilety łączone obejmujące wszystkie atrakcje.<br><br>
+
+Ceny zmieniają się sezonowo, najkorzystniejsze są zwykle bilety kupowane wcześniej przez internet.<br><br>
+
+<b>Praktyczne wskazówki</b><br><br>
+
+• Na zwiedzanie obu atrakcji warto przeznaczyć minimum 3–4 godziny.<br>
+• W sezonie wakacyjnym najlepiej przyjechać rano, aby uniknąć kolejek do wyciągu.<br>
+• Na grzbiecie znajdują się punkty gastronomiczne, toalety i miejsca odpoczynku.<br>
+• Nawet latem na grzbiecie bywa chłodno i wietrznie, dlatego warto zabrać dodatkową warstwę odzieży.<br><br>
+
+
+
+
+<div style="width:80%;margin:30px auto;border-top:2px solid #ccc;"></div>
+
+<h3>Králíky</h3>
+Jadąc autem z Boboszowa w kierunku Ścieżki w obłokach (lub z powrotem) droga wiedzie przez Králíky. Największą atrakcją miasta jest były klasztor redemptorystów na Górze Matki Bożej (Hora Matky Boží, dawniej Lysá hora, niem. Marienberg, Muttergottesberg), położony na wysokości 760 m n.p.m. na wschód od miasteczka.
+
+
+
+<br><br>
+
+
+Góra nad Králíkami stała się ważnym miejscem pielgrzymkowym już po wojnie trzydziestoletniej. Według tradycji Tobiaš Becker, późniejszy biskup hradecki, podczas procesji w czasie wojny złożył ślubowanie budowy świątyni w tym miejscu. Po 1648 roku pielgrzymki były kontynuowane, a w 1696 rozpoczęto budowę kompleksu sakralnego, który ukończono w 1700 roku wraz z przeniesieniem cudownego obrazu Matki Bożej Większej.<br><br>
+
+W XIX wieku sanktuarium zostało częściowo zniszczone przez pożar (1846), ale szybko je odbudowano i rozbudowano. Najważniejszym elementem kompleksu stał się barokowy klasztor Redemptorystów pw. Wniebowzięcia NMP ze Świętymi Schodami.<br><br>
+
+W 1950 roku władze komunistyczne zlikwidowały życie zakonne i utworzyły tu obóz internowania dla duchownych z całej Czechosłowacji. Klasztor odzyskano dopiero po 1989 roku, kiedy rozpoczęto jego renowację.<br><br>
+
+Dziś jest to ważne sanktuarium i cel pielgrzymek, a także punkt widokowy z panoramą na Králíky i Masyw Śnieżnika. Od połowy 2009 w klasztorze nie ma już zakonników – pracuje tu tylko jeden ksiądz diecezjalny. <br><br>
+
+Z centrum Králík na Górę Matki Bożej prowadzi krótka, ale stroma Droga Krzyżowa. Trasa biegnie malowniczą aleją lipową i jest najkrótszym dojściem do klasztoru, choć wymaga wysiłku. Po drodze towarzyszą jej stacje Drogi Krzyżowej oraz stopniowo otwierające się widoki na miasto i okolice. Być może warto na chwilę się zatrzymać i delikatnie zboczyć z trasy, aby zobaczyć z bliska ten potężny barokowy kompleks klasztorny, który dominuje nad całym wzgórzem.
+
+
+<div class="gallery-modular" id="gallery20">
+
+  <img src="https://cdn.kudyznudy.cz/files/55/5565c866-787b-40cb-8b1f-40b447b28691.webp?v=20251223130106" class="thumb-img">
+<img src="https://www.nebeske.cz/wp-content/uploads/2022/01/1408_ppg_Sneznik_Vyprachtice_022_Hedec_klaster.jpg" class="thumb-img">
+<img src="https://www.nebeske.cz/wp-content/uploads/2019/04/1612JJ_Kralicky_Sneznik_Hedec_421_Hedec.jpg" class="thumb-img">
+<img src="https://thumbs.dreamstime.com/b/hora-matky-bozi-monastery-anc-church-above-kraliky-city-czech-republic-meadow-isolated-trees-forest-clear-sky-104501878.jpg" class="thumb-img">
+
+<img src="https://cdn.kudyznudy.cz/files/3f/3f036553-8e7a-4431-a096-568bb73229b2.webp?v=20251223130106" class="thumb-img">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Hedec.jpg" class="thumb-img">
+<img src="https://www.brouzdak.cz/images/foto/713/Kraliky_Dolni_Hedec_Hora_Matky_Bozi_06_original.webp" class="thumb-img">
+</div>
+
+<div class="lightbox-modular" id="lightbox20">
+  <span class="lb-close">&times;</span>
+  <span class="lb-prev">&#10094;</span>
+  <img class="lb-img">
+  <span class="lb-next">&#10095;</span>
+</div>
+
+<style>
+.gallery-modular{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+
+.gallery-modular .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+
+.gallery-modular .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  .gallery-modular .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+
+.lightbox-modular{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+}
+
+.lightbox-modular .lb-img{
+  max-width:90%;
+  max-height:90%;
+  margin-top:5%;
+  border-radius:6px;
+}
+
+.lb-close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
+
+.lb-prev, .lb-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:50px;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  user-select:none;
+}
+
+.lb-prev{ left:20px; }
+.lb-next{ right:20px; }
+</style>
+
+<script>
+(function(){
+
+  const gallery = document.getElementById('gallery20');
+  const lightbox = document.getElementById('lightbox20');
+  const images = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+  const lbImg = lightbox.querySelector('.lb-img');
+
+  let current = 0;
+
+  function show(index){
+    current = (index + images.length) % images.length;
+    lbImg.src = images[current];
+    lightbox.style.display = 'block';
+  }
+
+  function next(){ show(current + 1); }
+  function prev(){ show(current - 1); }
+
+  gallery.querySelectorAll('img').forEach((img, i)=>{
+    img.addEventListener('click', ()=> show(i));
+  });
+
+  lightbox.querySelector('.lb-next').onclick = next;
+  lightbox.querySelector('.lb-prev').onclick = prev;
+  lightbox.querySelector('.lb-close').onclick = ()=> lightbox.style.display='none';
+
+  lightbox.addEventListener('click', e=>{
+    if(e.target === lightbox) lightbox.style.display='none';
+  });
+
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display === 'block'){
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'Escape') lightbox.style.display='none';
+    }
+  });
+
+  let startX = 0;
+
+  lightbox.addEventListener('touchstart', e=>{
+    startX = e.touches[0].clientX;
+  });
+
+  lightbox.addEventListener('touchend', e=>{
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(Math.abs(diff) > 50){
+      if(diff > 0) next();
+      else prev();
+    }
+  });
+
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+    </div>
+
+<br><br><br>
+   <p style="font-size: 12px;"> Wszystkie fotografie i inne multimedia wykorzystane w niniejszym przewodniku pochodzą z ogólnodostępnych źródeł, w szczególności polska.org.pl, dbc.wroc.pl, sbc.org.pl oraz inncyh źródeł wskazanych bezpośrednio w treści strony.
+
+<br>Materiały te zostały wykorzystane wyłącznie w celach krajoznawczych, edukacyjnych oraz popularyzatorskich, służących szerzeniu wiedzy o regionie Ziemi Kłodzkiej. Strona nie ma charakteru komercyjnego, a jej autor nie czerpie żadnych korzyści majątkowych z publikacji ww. treści.
+
+<br>Wszelkie prawa autorskie do wykorzystanych materiałów należą do ich pierwotnych właścicieli. W przypadku jakichkolwiek wątpliwości lub zastrzeżeń prosimy o kontakt w celu niezwłocznego wyjaśnienia sprawy lub usunięcia wskazanych treści.
+
+</p>
+</div>
+
+<script>
+function openContent(id, btn) {
+    let contents = document.getElementsByClassName("content");
+    for (let i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+    }
+
+    let buttons = document.getElementsByClassName("accordion");
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove("active");
+    }
+
+    document.getElementById(id).style.display = "block";
+    btn.classList.add("active");
+}
+</script>
+</body>
+</html>
